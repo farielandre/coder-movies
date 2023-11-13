@@ -7,14 +7,14 @@
   </head>
   <body>
     <header class="header">
-      <h1>Coder<span>Movies</h1></span>
-      <button>
+      <h1 class="header__logo">Coder<span>Movies</h1></span>
+      <button class="header__btn">
             Genres
             <svg width="19" height="11" viewBox="0 0 19 11" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M1.5 1L9.5 9L17.5 1" stroke="#F9FAFB" stroke-width="2" stroke-linecap="round" />
             </svg>
       </button>
-      <ul class="dropdown">
+      <ul class="header__dropdown">
               <li> Drama</li>
               <li>Fantasy</li>
               <li>Historical</li>
@@ -32,8 +32,8 @@
               <li>Crime</li>
       </ul>
           
-      <form >
-        <div>
+      <form class="header__form" >
+        <div class="header__form-wrapper">
           <input type="text" placeholder="Search a movie" >
           <svg width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="9.5" cy="9.5" r="8" fill="#F9FAFB" stroke="#030712" stroke-width="3" />
@@ -42,7 +42,7 @@
         </div>
       </form>
   
-      <button>
+      <button class="header__form-btn">
         <a href="watchlist.html">
           <i><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
             <path stroke-linecap="round" stroke-linejoin="round" d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z" />
@@ -52,7 +52,7 @@
         </a> 
       </button>
   
-      <button>
+      <button class="header__form-btn header__form-btn--darkmode">
         <i>
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
             <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
@@ -300,7 +300,7 @@
     </main>
 
     <footer class="footer">
-      <p>~ Grupo 1 - CoderHouse - Front-End Dev - 2023 ~</p>
+      <p class="footer__text">~ Grupo 1 - CoderHouse - Front-End Dev - 2023 ~</p>
   
     </footer>
   </body>

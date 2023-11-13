@@ -11,14 +11,14 @@
 
 
   <header class="header">
-    <h1>Coder<span>Movies</h1></span>
-    <button>
+    <h1 class="header__logo">Coder<span>Movies</h1></span>
+    <button class="header__btn">
           Genres
           <svg width="19" height="11" viewBox="0 0 19 11" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M1.5 1L9.5 9L17.5 1" stroke="#F9FAFB" stroke-width="2" stroke-linecap="round" />
           </svg>
     </button>
-    <ul class="dropdown">
+    <ul class="header__dropdown">
             <li> Drama</li>
             <li>Fantasy</li>
             <li>Historical</li>
@@ -36,8 +36,8 @@
             <li>Crime</li>
     </ul>
         
-    <form >
-      <div>
+    <form class="header__form" >
+      <div class="header__form-wrapper">
         <input type="text" placeholder="Search a movie" >
         <svg width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
           <circle cx="9.5" cy="9.5" r="8" fill="#F9FAFB" stroke="#030712" stroke-width="3" />
@@ -46,7 +46,7 @@
       </div>
     </form>
 
-    <button>
+    <button class="header__form-btn">
       <a href="watchlist.html">
         <i><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
           <path stroke-linecap="round" stroke-linejoin="round" d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z" />
@@ -56,7 +56,7 @@
       </a> 
     </button>
 
-    <button>
+    <button class="header__form-btn header__form-btn--darkmode">
       <i>
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
           <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
@@ -71,17 +71,17 @@
       <img src="./assets/usual_suspects.jpg" alt="movie cover" />
     </div>
     <section class="movie__information">
-      <div class="movie__heading">
-        <h2 class="movie__title">The Usual Suspects</h2>
-        <span class="movie__launch_year">1995</span>
-        <span class="movie__duration">1h46m</span>
+      <div class="movie__information-heading">
+        <h2 class="movie__information-title">The Usual Suspects</h2>
+        <span class="movie__information-launch_year">1995</span>
+        <span class="movie__information-duration">1h46m</span>
 
         <ul class="movie__genres">
           <li class="movie__genre1">Crime</li>
           <li class="movie__genre2">Drama</li>
           <li class="movie__genre3">Mistery</li>
         </ul>
-        <button>
+        <button class="movie__information--btn">
           <a class="movie_bookmark" href="/watchlist.html" target="_blank"><img src="./assets/bookmark_icon.png"
             alt="add to bookmarks icon" />Add to list</a>
         </button>
@@ -89,15 +89,15 @@
       </div>
 
       <div class="movie__details">
-        <h3 class="director">Director</h3>
-        <p class="director__name">Bryan Singer</p>
-        <h3 class="writer">Writer</h3>
-        <p class="writer__name">Christopher McQuarrie</p>
-        <h3 class="cast">Cast</h3>
-        <p class="cast__names">Stephen Baldwin, Gabriel Byrne, Benicio Del Toro, Kevin Pollak, Kevin Spacey, Chazz
+        <h3 class="movie__details-director">Director</h3>
+        <p class="movie__details-director__name">Bryan Singer</p>
+        <h3 class="movie__details-writer">Writer</h3>
+        <p class="movie__details-writer__name">Christopher McQuarrie</p>
+        <h3 class="movie__details-cast">Cast</h3>
+        <p class="movie__details-cast__names">Stephen Baldwin, Gabriel Byrne, Benicio Del Toro, Kevin Pollak, Kevin Spacey, Chazz
           Palminteri, Pete Postlethwaite</p>
-        <h3 class="storyline">Storyline</h3>
-        <p class="storyline__text">Following a truck hijack in New York, five criminals are arrested and brought
+        <h3 class="movie__details-storyline">Storyline</h3>
+        <p class="movie__details-storyline--text">Following a truck hijack in New York, five criminals are arrested and brought
           together
           for questioning. As none of them are guilty, they plan a revenge operation against the police. The operation
           goes well, but then the influence of a legendary mastermind criminal called Keyser Söze is felt. It becomes 
@@ -105,7 +105,7 @@
           men
           dead in a boat explosion, but the real question arises now: Who actually is Keyser Söze?</p>
 
-          <p class="movie_rating">IMDB Rating</p>
+          <p class="movie__details-rating">IMDB Rating</p>
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
             width="15">
             <path stroke-linecap="round" stroke-linejoin="round"
@@ -114,14 +114,12 @@
           <span class="IMDB_rating">9.1/10</span>
 
       </div>
-
-         
-         </div>
+      </div>
     </section>
     
-    <section class="movielist__container">
+    <section class="galery__container">
       <h2>Photo Gallery</h2>
-          <div class="photo-gallery">
+          <div class="galery__photo-gallery">
           <img src="./assets/image 9.png" alt="Imagem filme" />
           <img src="./assets/image 9.png" alt="Imagem filme" />
           <img src="./assets/image 9.png" alt="Imagem filme" />
@@ -129,7 +127,7 @@
       </section>
    </main>
    <footer class="footer">
-    <p>~ Grupo 1 - CoderHouse - Front-End Dev - 2023 ~</p>
+    <p class="footer__text">~ Grupo 1 - CoderHouse - Front-End Dev - 2023 ~</p>
 
   </footer>
 </body>
