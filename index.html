@@ -8,67 +8,61 @@
 </head>
 
 <body>
-  <header>
+  <header class="header">
     <h1>Coder<span>Movies</h1></span>
-    <div class="header_container">
-        <div class="header_botão">
-            <button>
-                <span>Genres</span>
-                <svg width="19" height="11" viewBox="0 0 19 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1.5 1L9.5 9L17.5 1" stroke="#F9FAFB" stroke-width="2" stroke-linecap="round" />
-                </svg>
-            </button>
+    <button>
+          Genres
+          <svg width="19" height="11" viewBox="0 0 19 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.5 1L9.5 9L17.5 1" stroke="#F9FAFB" stroke-width="2" stroke-linecap="round" />
+          </svg>
+    </button>
+    <ul class="dropdown">
+            <li> Drama</li>
+            <li>Fantasy</li>
+            <li>Historical</li>
+            <li>Horror</li>
+            <li>Musical</li>
+            <li>Noir</li>
+            <li>Romance</li>
+            <li>Science Fiction</li>
+            <li>Thriller</li>
+            <li>Western</li>
+            <li>Action</li>
+            <li>Adventure</li>
+            <li>Animated</li>
+            <li>Comedy</li>
+            <li>Crime</li>
+    </ul>
+        
+    <form >
+      <div>
+        <input type="text" placeholder="Search a movie" >
+        <svg width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="9.5" cy="9.5" r="8" fill="#F9FAFB" stroke="#030712" stroke-width="3" />
+          <path d="M15 16L23 24" stroke="#030712" stroke-width="3" stroke-linecap="round" />
+        </svg>
+      </div>
+    </form>
 
-            <div class="dropdown">
+    <button>
+      <a href="watchlist.html">
+        <i><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z" />
+        </svg>
+        </i>
+        Watchlist
+      </a> 
+    </button>
 
-                <ul>
-                    <li> Drama</li>
-                    <li>Fantasy</li>
-                    <li>Historical</li>
-                    <li>Horror</li>
-                    <li>Musical</li>
-                    <li>Noir</li>
-                    <li>Romance</li>
-                    <li>Science Fiction</li>
-                    <li>Thriller</li>
-                    <li>Western</li>
-                    <li>Action</li>
-                    <li>Adventure</li>
-                    <li>Animated</li>
-                    <li>Comedy</li>
-                    <li>Crime</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div>
-        <button>
-            <input type="text" placeholder="Search a movie">
-            <svg width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="9.5" cy="9.5" r="8" fill="#F9FAFB" stroke="#030712" stroke-width="3" />
-                <path d="M15 16L23 24" stroke="#030712" stroke-width="3" stroke-linecap="round" />
-            </svg>
-
-        </button>
-
-    </div>
-    <button type="button">Dark</button>
-    <button type="button">WatchList</button>
-    <menu class="WatchList">
-      <ul>
-        <li>The usual suspects</li>
-        <li>Figth club</li>
-        <li>The good the bad and the ugly</li>
-        <li>The dark kningt</li>
-        <li>Corpse bride</li>
-        <li>Braveheart</li>
-        <li>Barbie</li>
-        <li>Lilo e stitch</li>
-        <li>The avengers</li>
-      </ul>
-    </menu>
-
-
+    <button>
+      <i>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
+        </svg>
+        Darkmode
+      </i>
+    </button>
+   
   </header>
   <main class="movielist__container">
     <div class="movielist__card">
@@ -150,11 +144,8 @@
       </div>
     </div>
   </main>
-  <footer>
-    <img src="https://cdn-icons-png.flaticon.com/128/10329/10329641.png" alt="" width="50" height="50">
-    <h1> Filipe, Fariel, Wallace, Catarina, Everton<br></h1>
-    <img src="https://www.al.pi.leg.br/tv/banco-de-imagens-tv/todos-icons-redes-sociais.png/image " alt="" width="300"
-      height="300">
+  <footer class="footer">
+    <p>~ Grupo 1 - CoderHouse - Front-End Dev - 2023 ~</p>
 
   </footer>
 </body>
