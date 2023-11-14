@@ -1,307 +1,138 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="movies, imdb, watchlist movies, favorite movies"
+    />
+    <meta
+      name="description"
+      content="Dive into a curated collection of must-watch films, each featured alongside public ratings. Explore and curate your personalized movie journey with ease, right here on our platform"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>CoderMovies - Watchlist</title>
   </head>
   <body>
     <header class="header">
-      <h1 class="header__logo">Coder<span>Movies</h1></span>
-      <button class="header__btn">
-            Genres
-            <svg width="19" height="11" viewBox="0 0 19 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M1.5 1L9.5 9L17.5 1" stroke="#F9FAFB" stroke-width="2" stroke-linecap="round" />
-            </svg>
-      </button>
-      <ul class="header__dropdown">
-              <li> Drama</li>
-              <li>Fantasy</li>
-              <li>Historical</li>
-              <li>Horror</li>
-              <li>Musical</li>
-              <li>Noir</li>
-              <li>Romance</li>
-              <li>Science Fiction</li>
-              <li>Thriller</li>
-              <li>Western</li>
-              <li>Action</li>
-              <li>Adventure</li>
-              <li>Animated</li>
-              <li>Comedy</li>
-              <li>Crime</li>
-      </ul>
-          
-      <form class="header__form" >
-        <div class="header__form-wrapper">
-          <input type="text" placeholder="Search a movie" >
-          <svg width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="9.5" cy="9.5" r="8" fill="#F9FAFB" stroke="#030712" stroke-width="3" />
-            <path d="M15 16L23 24" stroke="#030712" stroke-width="3" stroke-linecap="round" />
-          </svg>
-        </div>
-      </form>
-  
-      <button class="header__form-btn">
-        <a href="watchlist.html">
-          <i><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z" />
-          </svg>
-          </i>
-          Watchlist
-        </a> 
-      </button>
-  
-      <button class="header__form-btn header__form-btn--darkmode">
-        <i>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
-          </svg>
-          Darkmode
-        </i>
-      </button>
-     
+      <h1 class="header__logo">
+        <a href="index.html">Coder<span>Movies</span></a>
+      </h1>
+      <nav>
+        <button class="header__btn">
+          Genres
+          <i class="fa-solid fa-arrow-down fa-2xs"></i>
+        </button>
+        <ul class="header__dropdown">
+          <li>Drama</li>
+          <li>Fantasy</li>
+          <li>Historical</li>
+          <li>Horror</li>
+          <li>Musical</li>
+          <li>Noir</li>
+          <li>Romance</li>
+          <li>Science Fiction</li>
+          <li>Thriller</li>
+          <li>Western</li>
+          <li>Action</li>
+          <li>Adventure</li>
+          <li>Animated</li>
+          <li>Comedy</li>
+          <li>Crime</li>
+        </ul>
+
+        <form class="header__form">
+          <div class="header__form-wrapper">
+            <input
+              type="text"
+              placeholder="Search a movie"
+              aria-label="Search a movie"
+            />
+            <i class="fa-solid fa-magnifying-glass fa-2xs"></i>
+          </div>
+        </form>
+
+        <button class="header__form-btn">
+          <a href="watchlist.html">
+            <i class="fa-solid fa-bookmark fa-2xs"></i>
+            Watchlist
+          </a>
+        </button>
+
+        <button class="header__form-btn header__form-btn--darkmode">
+          <i class="fa-solid fa-circle-half-stroke fa-2xs"></i>
+        </button>
+      </nav>
     </header>
-    
+
     <main class="movielist__container">
+      <h2>Your Watchlist</h2>
       <div class="movielist__card">
         <img src="./assets/image 9.png" alt="capa do filme" />
-        <i class="movielist__card-bookmark">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            width="15"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z"
-            />
-          </svg>
-        </i>
+        <i class="fa-solid fa-bookmark fa-2xs movielist__card-bookmark"></i>
         <div class="movielist__card-info">
-          <i>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              width="15"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"
-              />
-            </svg>
-          </i>
+          <i class="fa-solid fa-star fa-2xs"></i>
           <span>9.1</span>
         </div>
       </div>
 
       <div class="movielist__card">
         <img src="./assets/image 9.png" alt="capa do filme" />
-        <i class="movielist__card-bookmark">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            width="15"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z"
-            />
-          </svg>
-        </i>
+        <i class="fa-solid fa-bookmark fa-2xs movielist__card-bookmark"></i>
         <div class="movielist__card-info">
-          <i>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              width="15"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"
-              />
-            </svg>
-          </i>
+          <i class="fa-solid fa-star fa-2xs"></i>
+          <span>9.1</span> movielist__card-bookmark
+        </div>
+      </div>
+
+      <div class="movielist__card">
+        <img src="./assets/image 9.png" alt="capa do filme" />
+        <i class="fa-solid fa-bookmark fa-2xs movielist__card-bookmark"></i>
+        <div class="movielist__card-info">
+          <i class="fa-solid fa-star fa-2xs"></i>
           <span>9.1</span>
         </div>
       </div>
 
       <div class="movielist__card">
         <img src="./assets/image 9.png" alt="capa do filme" />
-        <i class="movielist__card-bookmark">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            width="15"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z"
-            />
-          </svg>
-        </i>
+        <i class="fa-solid fa-bookmark fa-2xs movielist__card-bookmark"></i>
         <div class="movielist__card-info">
-          <i>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              width="15"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"
-              />
-            </svg>
-          </i>
+          <i class="fa-solid fa-star fa-2xs"></i>
           <span>9.1</span>
         </div>
       </div>
 
       <div class="movielist__card">
         <img src="./assets/image 9.png" alt="capa do filme" />
-        <i class="movielist__card-bookmark">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            width="15"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z"
-            />
-          </svg>
-        </i>
+        <i class="fa-solid fa-bookmark fa-2xs movielist__card-bookmark"></i>
         <div class="movielist__card-info">
-          <i>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              width="15"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"
-              />
-            </svg>
-          </i>
+          <i class="fa-solid fa-star fa-2xs"></i>
           <span>9.1</span>
         </div>
       </div>
 
       <div class="movielist__card">
         <img src="./assets/image 9.png" alt="capa do filme" />
-        <i class="movielist__card-bookmark">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            width="15"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z"
-            />
-          </svg>
-        </i>
+        <i class="fa-solid fa-bookmark fa-2xs movielist__card-bookmark"></i>
         <div class="movielist__card-info">
-          <i>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              width="15"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"
-              />
-            </svg>
-          </i>
-          <span>9.1</span>
-        </div>
-      </div>
-
-      <div class="movielist__card">
-        <img src="./assets/image 9.png" alt="capa do filme" />
-        <i class="movielist__card-bookmark">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            width="15"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z"
-            />
-          </svg>
-        </i>
-        <div class="movielist__card-info">
-          <i>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              width="15"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"
-              />
-            </svg>
-          </i>
+          <i class="fa-solid fa-star fa-2xs"></i>
           <span>9.1</span>
         </div>
       </div>
     </main>
 
     <footer class="footer">
-      <p class="footer__text">~ Grupo 1 - CoderHouse - Front-End Dev - 2023 ~</p>
-  
+      <p class="footer__text">
+        ~ Grupo 1 - CoderHouse - Front-End Dev - 2023 ~
+      </p>
     </footer>
   </body>
 </html>
