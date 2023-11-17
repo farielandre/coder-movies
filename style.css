@@ -16,10 +16,12 @@
   --yellow: #fbbf24;
   --light-grey: #f9fafb;
   --font-family: "Roboto", sans-serif;
-  /* --font-xl: 2.5rem;
-   --font-lg
-  --font-md
-  --font-sm:  */
+  --font-2xl: 2.5rem;
+  --font-xl: 2rem;
+  --font-lg: 1.25rem;
+  --font-m: 1.125;
+  --font-md: 1rem;
+  --font-sm: 0.75rem;
 }
 
 html {
@@ -28,6 +30,8 @@ html {
 
 body {
   font-family: var(--font-family);
+  background-color: var(--dark-blue);
+  color: var(--light-grey);
 }
 
 input,
@@ -37,6 +41,11 @@ select {
   font: inherit;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 button {
   border: none;
   background: none;
@@ -44,6 +53,20 @@ button {
   cursor: pointer;
 }
 
-.header__logo {
-  font-size: 2.5rem;
+.btn {
+  color: var(--light-grey);
+  padding: 0.5rem;
+  border-radius: 12px;
+  border: 1px solid var(--yellow);
+  font-size: var(--font-m);
+}
+
+.btn:hover {
+  background: var(--yellow);
+  transition: all 0.3s;
+  color: var(--dark-blue);
+}
+
+.hide {
+  display: none;
 }

@@ -11,6 +11,13 @@
       name="description"
       content="Dive into a curated collection of must-watch films, each featured alongside public ratings. Explore and curate your personalized movie journey with ease, right here on our platform"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -18,19 +25,22 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="style.css" />
     <title>CoderMovies - Watchlist</title>
   </head>
   <body>
     <header class="header">
       <h1 class="header__logo">
-        <a href="index.html">Coder<span>Movies</span></a>
+        <a href="index.html"
+          >Coder<span class="header__logo-span">Movies</span></a
+        >
       </h1>
       <nav>
-        <button class="header__btn">
+        <button class="header__btn btn">
           Genres
           <i class="fa-solid fa-arrow-down fa-2xs"></i>
         </button>
-        <ul class="header__dropdown">
+        <ul class="header__dropdown hide">
           <li>Drama</li>
           <li>Fantasy</li>
           <li>Historical</li>
@@ -59,7 +69,7 @@
           </div>
         </form>
 
-        <button class="header__form-btn">
+        <button class="header__form-btn btn">
           <a href="watchlist.html">
             <i class="fa-solid fa-bookmark fa-2xs"></i>
             Watchlist
