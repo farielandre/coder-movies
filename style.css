@@ -77,20 +77,14 @@ button {
 }
 
 .movie__information-title {
-  font-family: var(--font-family);
   font-size: var(--font-2xl);
-  font-style: normal;
   font-weight: var(--font-w-bold);
-  line-height: normal;
 }
 
 .movie__information-launch_duration {
-  color: var(--light-grey);
-  font-family: var(--font-family);
   font-size: var(--font-m);
   font-style: normal;
   font-weight: var(--font-w-light);
-  line-height: normal;
 }
 
 .movie__information-dot{
@@ -99,24 +93,20 @@ button {
   margin-right: 5px;
 }
 
-.movie__genres {
-  color: var(--light-grey);
+.movie__genres li {
   text-align: center;
-  font-family: var(--font-family);
   font-size: var(--font-sm);
-  font-style: normal;
   font-weight: var(--font-w-medium);
-  line-height: normal;
+  padding: 0.4rem;
+  border-radius: 1.9rem;
+  border: 1px solid var(--grey);
 }
 
 .movie__information--btn {
   color: var(--dark-blue);
   background: var(--yellow);
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  border-radius: 1.9rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  border-radius: 0.75rem;
   font-size: var(--font-m);
 }
 
@@ -126,11 +116,8 @@ button {
 }
 
 .movie_details {
-  font-family: var(--font-family);
   font-size: var(--font-m);
-  font-style: normal;
   font-weight: var(--font-w-medium);
-  line-height: 130%;
 }
 
 .movie__details-title {
