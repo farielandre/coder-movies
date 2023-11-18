@@ -16,12 +16,17 @@
   --yellow: #fbbf24;
   --light-grey: #f9fafb;
   --font-family: "Roboto", sans-serif;
-  --font-2xl: 2.5rem;
+  --font-2xl: 2.2rem;
   --font-xl: 2rem;
   --font-lg: 1.25rem;
-  --font-m: 1.125;
+  --font-m: 1.125rem;
   --font-md: 1rem;
-  --font-sm: 0.75rem;
+  --font-sm: 0.875rem;
+  --font-w-xbold: 800;
+  --font-w-bold: 700;
+  --font-w-medium: 500;
+  --font-w-regular: 400;
+  --font-w-light: 300;
 }
 
 html {
@@ -34,7 +39,7 @@ body {
   color: var(--light-grey);
 }
 
-input,
+input, h2, h3,
 button,
 textarea,
 select {
@@ -70,3 +75,74 @@ button {
 .hide {
   display: none;
 }
+
+.movie__information-title {
+  font-family: var(--font-family);
+  font-size: var(--font-2xl);
+  font-style: normal;
+  font-weight: var(--font-w-bold);
+  line-height: normal;
+}
+
+.movie__information-launch_duration {
+  color: var(--light-grey);
+  font-family: var(--font-family);
+  font-size: var(--font-m);
+  font-style: normal;
+  font-weight: var(--font-w-light);
+  line-height: normal;
+}
+
+.movie__information-dot{
+  color: var(--yellow);
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.movie__genres {
+  color: var(--light-grey);
+  text-align: center;
+  font-family: var(--font-family);
+  font-size: var(--font-sm);
+  font-style: normal;
+  font-weight: var(--font-w-medium);
+  line-height: normal;
+}
+
+.movie__information--btn {
+  color: var(--dark-blue);
+  background: var(--yellow);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 1.9rem;
+  font-size: var(--font-m);
+}
+
+.movie__information--btn:hover {
+  transition: all 0.3s;
+  font-weight: var(--font-w-xbold);
+}
+
+.movie_details {
+  font-family: var(--font-family);
+  font-size: var(--font-m);
+  font-style: normal;
+  font-weight: var(--font-w-medium);
+  line-height: 130%;
+}
+
+.movie__details-title {
+  color: var(--light-grey);
+}
+
+.movie__details-content1 {
+  color: var(--yellow);
+  margin-bottom: 0.5rem;
+}
+
+.movie__details-content2 {
+  color: var(--light-grey);
+}
+
