@@ -16,6 +16,8 @@
   --yellow: #fbbf24;
   --light-grey: #f9fafb;
   --font-family: "Roboto", sans-serif;
+  --font-4xl: 3.125rem;
+  --font-3xl: 2.5rem;
   --font-2xl: 2.2rem;
   --font-xl: 2rem;
   --font-lg: 1.25rem;
@@ -39,7 +41,9 @@ body {
   color: var(--light-grey);
 }
 
-input, h2, h3,
+input,
+h2,
+h3,
 button,
 textarea,
 select {
@@ -58,22 +62,47 @@ button {
   cursor: pointer;
 }
 
-.btn {
+.header__logo {
   color: var(--light-grey);
-  padding: 0.5rem;
-  border-radius: 12px;
-  border: 1px solid var(--yellow);
-  font-size: var(--font-m);
+  font-family: var(--font-family);
+  font-size: var(--font-3xl);
 }
 
-.btn:hover {
-  background: var(--yellow);
-  transition: all 0.3s;
+.header__logo-span {
+  color: var(--yellow);
+  font-family: var(--font-family);
+  font-size: var(--font-3xl);
+  font-weight: 900;
+}
+
+.header__form {
+  border-radius: 12px;
+  background: var(--light-grey);
+  width: 28rem;
+  height: 3rem;
+  padding: 0.5rem;
   color: var(--dark-blue);
 }
 
-.hide {
-  display: none;
+.header__form-wrapper {
+  color: var(--Dark-blue);
+  width: 100%;
+  font-size: var(--font-lg);
+}
+
+.header__form-input {
+  background: transparent;
+  border: none;
+  outline: none;
+  width: 80%;
+}
+
+.header__form-btn--darkmode {
+  width: var(--font-3xl);
+  height: var(--font-3xl);
+  border-radius: 50%;
+  border: 1px solid var(--yellow);
+  font-size: var(--font-m);
 }
 
 .movie__information-title {
@@ -83,11 +112,10 @@ button {
 
 .movie__information-launch_duration {
   font-size: var(--font-m);
-  font-style: normal;
   font-weight: var(--font-w-light);
 }
 
-.movie__information-dot{
+.movie__information-dot {
   color: var(--yellow);
   margin-left: 5px;
   margin-right: 5px;
@@ -118,10 +146,7 @@ button {
 .movie_details {
   font-size: var(--font-m);
   font-weight: var(--font-w-medium);
-}
-
-.movie__details-title {
-  color: var(--light-grey);
+  line-height: 130%;
 }
 
 .movie__details-content1 {
@@ -129,7 +154,20 @@ button {
   margin-bottom: 0.5rem;
 }
 
-.movie__details-content2 {
+.btn {
   color: var(--light-grey);
+  padding: 0.5rem;
+  border-radius: 12px;
+  border: 1px solid var(--yellow);
+  font-size: var(--font-m);
 }
 
+.btn:hover {
+  background: var(--yellow);
+  transition: all 0.3s;
+  color: var(--dark-blue);
+}
+
+.hide {
+  display: none;
+}
