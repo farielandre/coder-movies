@@ -146,3 +146,77 @@ button {
   color: var(--light-grey);
 }
 
+.header__logo {
+  color:#f9fafb;
+  font-family: var(--font-family);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.header__logo-span {
+  color: var(--Yellow, #FBBF24);
+  font-family: var(--font-family);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+
+.header__btn {
+  width: 150px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 30px;
+  border: 2px solid var(--Yellow, #FBBF24);
+  background: var(--Dark-blue, #030712);
+}
+
+.fa-arrow-down {
+  width: 16px;
+  height: 8px;
+  flex-shrink: 0;
+  stroke-width: 2px;
+  stroke: var(--Light-Grey, #F9FAFB);
+}
+
+.header__dropdown {
+  width: 153px;
+  height: 160px;
+  flex-shrink: 0;
+  color: var(--Light-Grey, #F9FAFB);
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.header__form {
+  width: 448px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 30px;
+  background: var(--Light-Grey, #F9FAFB);
+}
+
+.header__form-wrapper {
+  color: var(--Dark-blue, #030712);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.fa-magnifying-glass {
+  color: var(--Dark-blue, #030712);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
