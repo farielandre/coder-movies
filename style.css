@@ -117,16 +117,16 @@ button {
 
 .movie__information-dot {
   color: var(--yellow);
-  margin-left: 5px;
-  margin-right: 5px;
+  margin: 0 0.4rem 0 0.4rem;
 }
 
 .movie__genres li {
+  color: var(--grey);
   text-align: center;
   font-size: var(--font-sm);
   font-weight: var(--font-w-medium);
   padding: 0.4rem;
-  border-radius: 1.9rem;
+  border-radius: 0.75rem;
   border: 1px solid var(--grey);
 }
 
@@ -146,12 +146,32 @@ button {
 .movie_details {
   font-size: var(--font-m);
   font-weight: var(--font-w-medium);
-  line-height: 130%;
 }
 
 .movie__details-content1 {
   color: var(--yellow);
   margin-bottom: 0.5rem;
+}
+
+#star__IMDB_rating {
+  color: var(--yellow);
+}
+
+.movie__details-rating {
+  font-size: var(--font-lg);
+  font-weight: var(--font-w-bold);
+}
+
+.IMDB_rating {
+  font-size: var(--font-lg);
+  font-weight: var(--font-w-bold);
+  color: var(--yellow);
+}
+
+.movie__details-gallery-title {
+  font-size: var(--font-xl);
+  font-weight: var(--font-w-medium);
+  margin: 2.5rem 0rem 2rem 0rem;
 }
 
 .btn {
