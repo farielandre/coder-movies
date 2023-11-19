@@ -20,10 +20,12 @@
   --font-3xl: 2.5rem;
   --font-2xl: 2.2rem;
   --font-xl: 2rem;
+  --font-2lg: 1.875rem;
   --font-lg: 1.25rem;
   --font-m: 1.125rem;
   --font-md: 1rem;
   --font-sm: 0.875rem;
+  --font-w-black: 900;
   --font-w-xbold: 800;
   --font-w-bold: 700;
   --font-w-medium: 500;
@@ -42,6 +44,7 @@ body {
 }
 
 input,
+h1,
 h2,
 h3,
 button,
@@ -64,15 +67,32 @@ button {
 
 .header__logo {
   color: var(--light-grey);
-  font-family: var(--font-family);
   font-size: var(--font-3xl);
+  font-weight: var(--font-w-regular);
 }
 
 .header__logo-span {
   color: var(--yellow);
-  font-family: var(--font-family);
   font-size: var(--font-3xl);
-  font-weight: 900;
+  font-weight: var(--font-w-black);
+}
+
+.btn {
+  color: var(--light-grey);
+  padding: 0.5rem;
+  border-radius: 12px;
+  border: 1px solid var(--yellow);
+  font-size: var(--font-m);
+}
+
+.btn:hover {
+  background: var(--yellow);
+  transition: all 0.3s;
+  color: var(--dark-blue);
+}
+
+.hide {
+  display: none;
 }
 
 .header__form {
@@ -97,12 +117,9 @@ button {
   width: 80%;
 }
 
-.header__form-btn--darkmode {
-  width: var(--font-3xl);
-  height: var(--font-3xl);
+.header__darkmode {
   border-radius: 50%;
   border: 1px solid var(--yellow);
-  font-size: var(--font-m);
 }
 
 .movie__information-title {
@@ -153,7 +170,7 @@ button {
   margin-bottom: 0.5rem;
 }
 
-.star__IMDB_rating {
+.fa-star {
   color: var(--yellow);
 }
 
@@ -174,20 +191,41 @@ button {
   margin: 2.5rem 0rem 2rem 0rem;
 }
 
-.btn {
+.footer {
+  height: 7.7rem;
+  border-top: 0.125rem solid;
+  border-color: var(--yellow);
+}
+
+.footer__logo {
   color: var(--light-grey);
-  padding: 0.5rem;
-  border-radius: 12px;
-  border: 1px solid var(--yellow);
-  font-size: var(--font-m);
+  font-size: var(--font-2lg);
+  font-weight: var(--font-w-regular);
 }
 
-.btn:hover {
-  background: var(--yellow);
-  transition: all 0.3s;
-  color: var(--dark-blue);
+.footer__logo-span {
+  color: var(--yellow);
+  font-size: var(--font-2lg);
+  font-weight: var(--font-w-black);
 }
 
-.hide {
-  display: none;
+.footer__text {
+  font-size: var(--font-md);
+  font-weight: var(--font-w-regular);
+}
+
+.footer__nav {
+  color: var(--yellow);
+}
+
+.fa-instagram:hover {
+  color: var(--light-grey);
+}
+
+.fa-github:hover {
+  color: var(--light-grey);
+}
+
+.fa-envelope:hover {
+  color: var(--light-grey);
 }
