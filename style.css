@@ -1,3 +1,4 @@
+/* Reset */
 *,
 *::before,
 *::after {
@@ -8,39 +9,6 @@
   margin: 0;
   padding: 0;
   line-height: calc(1em + 0.5rem);
-}
-
-:root {
-  --dark-blue: #030712;
-  --grey: #6b7280;
-  --yellow: #fbbf24;
-  --light-grey: #f9fafb;
-  --font-family: "Roboto", sans-serif;
-  --font-4xl: 3.125rem;
-  --font-3xl: 2.5rem;
-  --font-2xl: 2.2rem;
-  --font-xl: 2rem;
-  --font-2lg: 1.875rem;
-  --font-lg: 1.25rem;
-  --font-m: 1.125rem;
-  --font-md: 1rem;
-  --font-sm: 0.875rem;
-  --font-w-black: 900;
-  --font-w-xbold: 800;
-  --font-w-bold: 700;
-  --font-w-medium: 500;
-  --font-w-regular: 400;
-  --font-w-light: 300;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: var(--font-family);
-  background-color: var(--dark-blue);
-  color: var(--light-grey);
 }
 
 input,
@@ -65,55 +33,82 @@ button {
   cursor: pointer;
 }
 
-h3 {
-  font-size: var(--font-xl);
-  font-weight: var(--font-w-medium);
-  margin: 2.5rem 0rem 2rem 0rem;
+/* Root variables */
+
+:root {
+  /* font-color */
+  --color-dark-blue: #030712;
+  --color-grey: #6b7280;
+  --color-yellow: #fbbf24;
+  --color-light-grey: #f9fafb;
+  /* font-family */
+  --font-family: "Roboto", sans-serif;
+  /* font-s = font-size */
+  --font-s-4xl: 3.125rem;
+  --font-s-3xl: 2.5rem;
+  --font-s-2xl: 2.2rem;
+  --font-s-xl: 2rem;
+  --font-s-2lg: 1.875rem;
+  --font-s-lg: 1.25rem;
+  --font-s-2m: 1.125rem;
+  --font-s-m: 1rem;
+  --font-s-sm: 0.875rem;
+  /* font-w = font-weight */
+  --font-w-black: 900;
+  --font-w-xbold: 800;
+  --font-w-bold: 700;
+  --font-w-medium: 500;
+  --font-w-regular: 400;
+  --font-w-light: 300;
 }
 
-.header__logo {
-  color: var(--light-grey);
-  font-size: var(--font-3xl);
-  font-weight: var(--font-w-regular);
-}
-
-.header__logo-span {
-  color: var(--yellow);
-  font-size: var(--font-3xl);
-  font-weight: var(--font-w-black);
-}
-
-.btn {
-  color: var(--light-grey);
-  padding: 0.5rem;
-  border-radius: 12px;
-  border: 1px solid var(--yellow);
-  font-size: var(--font-m);
-}
-
-.btn:hover {
-  background: var(--yellow);
-  transition: all 0.3s;
-  color: var(--dark-blue);
+html {
+  scroll-behavior: smooth;
 }
 
 .hide {
   display: none;
 }
 
+body {
+  font-family: var(--font-family);
+  background-color: var(--color-dark-blue);
+  color: var(--color-light-grey);
+}
+
+h3 {
+  font-size: var(--font-s-xl);
+  font-weight: var(--font-w-medium);
+  margin: 2.5rem 0rem 2rem 0rem;
+}
+
+/* Header */
+
+.header__logo {
+  color: var(--color-light-grey);
+  font-size: var(--font-s-3xl);
+  font-weight: var(--font-w-regular);
+}
+
+.header__logo-span {
+  color: var(--color-yellow);
+  font-size: var(--font-s-3xl);
+  font-weight: var(--font-w-black);
+}
+
 .header__form {
-  border-radius: 12px;
-  background: var(--light-grey);
+  border-radius: 0.75rem;
+  background: var(--color-light-grey);
   width: 28rem;
   height: 3rem;
   padding: 0.5rem;
-  color: var(--dark-blue);
+  color: var(--color-dark-blue);
 }
 
 .header__form-wrapper {
-  color: var(--Dark-blue);
+  color: var(--color-dark-blue);
   width: 100%;
-  font-size: var(--font-lg);
+  font-size: var(--font-s-lg);
 }
 
 .header__form-input {
@@ -125,40 +120,58 @@ h3 {
 
 .header__darkmode {
   border-radius: 50%;
-  border: 1px solid var(--yellow);
+  border: 1px solid var(--color-yellow);
 }
 
+/* Buttons */
+
+.btn {
+  color: var(--color-light-grey);
+  padding: 0.5rem;
+  border-radius: 0.75rem;
+  border: 1px solid var(--color-yellow);
+  font-size: var(--font-s-2m);
+}
+
+.btn:hover {
+  background: var(--color-yellow);
+  transition: all 0.3s;
+  color: var(--color-dark-blue);
+}
+
+/* Details page */
+
 .movie__information-title {
-  font-size: var(--font-2xl);
+  font-size: var(--font-s-2xl);
   font-weight: var(--font-w-bold);
 }
 
 .movie__information-launch_duration {
-  font-size: var(--font-m);
+  font-size: var(--font-s-2m);
   font-weight: var(--font-w-light);
 }
 
 .movie__information-dot {
-  color: var(--yellow);
+  color: var(--color-yellow);
   margin: 0 0.4rem 0 0.4rem;
 }
 
 .movie__genres li {
-  color: var(--grey);
+  color: var(--color-grey);
   text-align: center;
-  font-size: var(--font-sm);
+  font-size: var(--font-s-sm);
   font-weight: var(--font-w-medium);
   padding: 0.4rem;
   border-radius: 0.75rem;
-  border: 1px solid var(--grey);
+  border: 1px solid var(--color-grey);
 }
 
 .movie__information--btn {
-  color: var(--dark-blue);
-  background: var(--yellow);
+  color: var(--color-dark-blue);
+  background: var(--color-yellow);
   padding: 0.5rem 1rem 0.5rem 1rem;
   border-radius: 0.75rem;
-  font-size: var(--font-m);
+  font-size: var(--font-s-2m);
 }
 
 .movie__information--btn:hover {
@@ -167,65 +180,59 @@ h3 {
 }
 
 .movie_details {
-  font-size: var(--font-m);
+  font-size: var(--font-s-2m);
   font-weight: var(--font-w-medium);
 }
 
 .movie__details-content1 {
-  color: var(--yellow);
+  color: var(--color-yellow);
   margin-bottom: 0.5rem;
 }
 
 .fa-star {
-  color: var(--yellow);
+  color: var(--color-yellow);
 }
 
 .movie__details-rating {
-  font-size: var(--font-lg);
+  font-size: var(--font-s-lg);
   font-weight: var(--font-w-bold);
 }
 
 .IMDB_rating {
-  font-size: var(--font-lg);
+  font-size: var(--font-s-lg);
   font-weight: var(--font-w-bold);
-  color: var(--yellow);
+  color: var(--color-yellow);
 }
+
+/* Footer */
 
 .footer {
   height: 7.7rem;
   border-top: 0.125rem solid;
-  border-color: var(--yellow);
+  border-color: var(--color-yellow);
 }
 
 .footer__logo {
-  color: var(--light-grey);
-  font-size: var(--font-2lg);
+  color: var(--color-light-grey);
+  font-size: var(--font-s-2lg);
   font-weight: var(--font-w-regular);
 }
 
 .footer__logo-span {
-  color: var(--yellow);
-  font-size: var(--font-2lg);
+  color: var(--color-yellow);
+  font-size: var(--font-s-2lg);
   font-weight: var(--font-w-black);
 }
 
 .footer__text {
-  font-size: var(--font-md);
+  font-size: var(--font-s-m);
   font-weight: var(--font-w-regular);
 }
 
 .footer__nav {
-  color: var(--yellow);
+  color: var(--color-yellow);
 }
 
-.fa-instagram:hover {
-  color: var(--light-grey);
-}
-
-.fa-github:hover {
-  color: var(--light-grey);
-}
-
-.fa-envelope:hover {
-  color: var(--light-grey);
+.footer__icons:hover {
+  color: var(--color-light-grey);
 }
