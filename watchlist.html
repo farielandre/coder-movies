@@ -1,136 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="movies, imdb, movies infos, movies rating, movie list"
+    />
+    <meta
+      name="description"
+      content="Explore our captivating movie list homepage featuring a stunning gallery of top-rated films, each highlighted with their public ratings. Discover cinematic gems and dive into the world of acclaimed movies right at your fingertips"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+    <link rel="stylesheet" href="style.css" />
+    <title>CoderMovies - Watchlist</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="keywords" content="movies, imdb, movies infos, movies rating, movie list" />
-  <meta name="description"
-    content="Explore our captivating movie list homepage featuring a stunning gallery of top-rated films, each highlighted with their public ratings. Discover cinematic gems and dive into the world of acclaimed movies right at your fingertips" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
-  <link rel="manifest" href="./assets/favicon/site.webmanifest">
-  <link rel="stylesheet" href="style.css" />
-  <title>CoderMovies - Watchlist</title>
-</head>
+  <body>
+    <div id="app">
+      <header class="header">
+        <h1 class="header__logo">
+          <a href="index.html"
+            >Coder<span class="header__logo-span">Movies</span></a
+          >
+        </h1>
+        <nav>
+          <button class="header__genres btn">
+            Genres
+            <i class="fa-solid fa-chevron-down fa-sm"></i>
+          </button>
+          <ul class="header__dropdown hide">
+            <li>Drama</li>
+            <li>Fantasy</li>
+            <li>Historical</li>
+            <li>Horror</li>
+            <li>Musical</li>
+            <li>Noir</li>
+            <li>Romance</li>
+            <li>Science Fiction</li>
+            <li>Thriller</li>
+            <li>Western</li>
+            <li>Action</li>
+            <li>Adventure</li>
+            <li>Animated</li>
+            <li>Comedy</li>
+            <li>Crime</li>
+          </ul>
+          <form class="header__form">
+            <div class="header__form-wrapper">
+              <input
+                type="text"
+                class="header__form-input"
+                placeholder="Search a movie"
+                aria-label="Search a movie"
+              />
+              <i class="fa-solid fa-magnifying-glass fa-sm"></i>
+            </div>
+          </form>
+          <button class="header__watchlist btn">
+            <a href="watchlist.html">
+              <i class="fa-solid fa-bookmark fa-sm"></i>
+              Watchlist
+            </a>
+          </button>
+          <button class="header__darkmode btn">
+            <i class="fa-solid fa-circle-half-stroke fa-lg"></i>
+          </button>
+        </nav>
+      </header>
+      <main>
+        <h3>Your Watchlist</h3>
+        <div class="movielist__container">
+          <div class="movielist__card">
+            <img src="./assets/images/image 9.png" alt="capa do filme" />
+            <i class="fa-solid fa-bookmark fa-2xs movielist__card-bookmark"></i>
+            <div class="movielist__card-info">
+              <i class="fa-solid fa-star fa-2xs"></i>
+              <span>9.1</span>
+            </div>
+          </div>
+          <div class="movielist__card">
+            <img src="./assets/images/image 9.png" alt="capa do filme" />
+            <i class="fa-solid fa-bookmark fa-2xs movielist__card-bookmark"></i>
+            <div class="movielist__card-info">
+              <i class="fa-solid fa-star fa-2xs"></i>
+              <span>9.1</span>
+            </div>
+          </div>
+          <div class="movielist__card">
+            <img src="./assets/images/image 9.png" alt="capa do filme" />
+            <i class="fa-solid fa-bookmark fa-2xs movielist__card-bookmark"></i>
+            <div class="movielist__card-info">
+              <i class="fa-solid fa-star fa-2xs"></i>
+              <span>9.1</span>
+            </div>
+          </div>
+          <div class="movielist__card">
+            <img src="./assets/images/image 9.png" alt="capa do filme" />
+            <i class="fa-solid fa-bookmark fa-2xs movielist__card-bookmark"></i>
+            <div class="movielist__card-info">
+              <i class="fa-solid fa-star fa-2xs"></i>
+              <span>9.1</span>
+            </div>
+          </div>
+          <div class="movielist__card">
+            <img src="./assets/images/image 9.png" alt="capa do filme" />
+            <i class="fa-solid fa-bookmark fa-2xs movielist__card-bookmark"></i>
+            <div class="movielist__card-info">
+              <i class="fa-solid fa-star fa-2xs"></i>
+              <span>9.1</span>
+            </div>
+          </div>
+          <div class="movielist__card">
+            <img src="./assets/images/image 9.png" alt="capa do filme" />
+            <i class="fa-solid fa-bookmark fa-2xs movielist__card-bookmark"></i>
+            <div class="movielist__card-info">
+              <i class="fa-solid fa-star fa-2xs"></i>
+              <span>9.1</span>
+            </div>
+          </div>
 
-<body>
-  <header class="header">
-    <h1 class="header__logo">
-      <a href="index.html">Coder<span class="header__logo-span">Movies</span></a>
-    </h1>
-    <nav>
-      <button class="header__genres btn">
-        Genres
-        <i class="fa-solid fa-chevron-down fa-sm"></i>
-      </button>
-      <ul class="header__dropdown hide">
-        <li>Drama</li>
-        <li>Fantasy</li>
-        <li>Historical</li>
-        <li>Horror</li>
-        <li>Musical</li>
-        <li>Noir</li>
-        <li>Romance</li>
-        <li>Science Fiction</li>
-        <li>Thriller</li>
-        <li>Western</li>
-        <li>Action</li>
-        <li>Adventure</li>
-        <li>Animated</li>
-        <li>Comedy</li>
-        <li>Crime</li>
-      </ul>
-      <form class="header__form">
-        <div class="header__form-wrapper">
-          <input type="text" class="header__form-input" placeholder="Search a movie" aria-label="Search a movie" />
-          <i class="fa-solid fa-magnifying-glass fa-sm"></i>
+          <div class="movielist__card">
+            <img src="./assets/images/image 9.png" alt="capa do filme" />
+            <i class="fa-solid fa-bookmark fa-2xs movielist__card-bookmark"></i>
+            <div class="movielist__card-info">
+              <i class="fa-solid fa-star fa-2xs"></i>
+              <span>9.1</span>
+            </div>
+          </div>
+          <div class="movielist__card">
+            <img src="./assets/images/image 9.png" alt="capa do filme" />
+            <i class="fa-solid fa-bookmark fa-2xs movielist__card-bookmark"></i>
+            <div class="movielist__card-info">
+              <i class="fa-solid fa-star fa-2xs"></i>
+              <span>9.1</span>
+            </div>
+          </div>
+          <div class="movielist__card">
+            <img src="./assets/images/image 9.png" alt="capa do filme" />
+            <i class="fa-solid fa-bookmark fa-2xs movielist__card-bookmark"></i>
+            <div class="movielist__card-info">
+              <i class="fa-solid fa-star fa-2xs"></i>
+              <span>9.1</span>
+            </div>
+          </div>
+          <div class="movielist__card">
+            <img src="./assets/images/image 9.png" alt="capa do filme" />
+            <i class="fa-solid fa-bookmark fa-2xs movielist__card-bookmark"></i>
+            <div class="movielist__card-info">
+              <i class="fa-solid fa-star fa-2xs"></i>
+              <span>9.1</span>
+            </div>
+          </div>
+          <div class="movielist__card">
+            <img src="./assets/images/image 9.png" alt="capa do filme" />
+            <i class="fa-solid fa-bookmark fa-2xs movielist__card-bookmark"></i>
+            <div class="movielist__card-info">
+              <i class="fa-solid fa-star fa-2xs"></i>
+              <span>9.1</span>
+            </div>
+          </div>
+          <div class="movielist__card">
+            <img src="./assets/images/image 9.png" alt="capa do filme" />
+            <i class="fa-solid fa-bookmark fa-2xs movielist__card-bookmark"></i>
+            <div class="movielist__card-info">
+              <i class="fa-solid fa-star fa-2xs"></i>
+              <span>9.1</span>
+            </div>
+          </div>
         </div>
-      </form>
-      <button class="header__watchlist btn">
-        <a href="watchlist.html">
-          <i class="fa-solid fa-bookmark fa-sm"></i>
-          Watchlist
-        </a>
-      </button>
-      <button class="header__darkmode btn">
-        <i class="fa-solid fa-circle-half-stroke fa-lg"></i>
-      </button>
-    </nav>
-  </header>
-  <main class="movielist__container">
-    <h3>Your Watchlist</h3>
-    <div class="movielist__card">
-      <img src="./assets/images/image 9.png" alt="capa do filme" />
-      <i class="fa-solid fa-bookmark fa-2xs movielist__card-bookmark"></i>
-      <div class="movielist__card-info">
-        <i class="fa-solid fa-star fa-2xs"></i>
-        <span>9.1</span>
-      </div>
+      </main>
+      <footer class="footer">
+        <a class="footer__logo" href="index.html"
+          >Coder<span class="footer__logo-span">Movies</span></a
+        >
+        <p class="footer__text">
+          © Copyright 2023 - <b>Grupo 1</b> - CoderMovies
+        </p>
+        <nav class="footer__nav">
+          <a href="https://www.instagram.com/coderhousebrasil" target="_blank">
+            <i class="fa-brands fa-instagram fa-lg footer__icons"></i>
+          </a>
+          <a href="https://github.com/filipezzo/CoderMovies" target="_blank">
+            <i class="fa-brands fa-github fa-lg footer__icons"></i>
+          </a>
+          <a href="mailto:estudantes@coderhouse.com" target="_blank">
+            <i class="fa-solid fa-envelope fa-lg footer__icons"></i>
+          </a>
+        </nav>
+      </footer>
     </div>
-    <div class="movielist__card">
-      <img src="./assets/images/image 9.png" alt="capa do filme" />
-      <i class="fa-solid fa-bookmark fa-2xs movielist__card-bookmark"></i>
-      <div class="movielist__card-info">
-        <i class="fa-solid fa-star fa-2xs"></i>
-        <span>9.1</span>
-      </div>
-    </div>
-    <div class="movielist__card">
-      <img src="./assets/images/image 9.png" alt="capa do filme" />
-      <i class="fa-solid fa-bookmark fa-2xs movielist__card-bookmark"></i>
-      <div class="movielist__card-info">
-        <i class="fa-solid fa-star fa-2xs"></i>
-        <span>9.1</span>
-      </div>
-    </div>
-    <div class="movielist__card">
-      <img src="./assets/images/image 9.png" alt="capa do filme" />
-      <i class="fa-solid fa-bookmark fa-2xs movielist__card-bookmark"></i>
-      <div class="movielist__card-info">
-        <i class="fa-solid fa-star fa-2xs"></i>
-        <span>9.1</span>
-      </div>
-    </div>
-    <div class="movielist__card">
-      <img src="./assets/images/image 9.png" alt="capa do filme" />
-      <i class="fa-solid fa-bookmark fa-2xs movielist__card-bookmark"></i>
-      <div class="movielist__card-info">
-        <i class="fa-solid fa-star fa-2xs"></i>
-        <span>9.1</span>
-      </div>
-    </div>
-    <div class="movielist__card">
-      <img src="./assets/images/image 9.png" alt="capa do filme" />
-      <i class="fa-solid fa-bookmark fa-2xs movielist__card-bookmark"></i>
-      <div class="movielist__card-info">
-        <i class="fa-solid fa-star fa-2xs"></i>
-        <span>9.1</span>
-      </div>
-    </div>
-  </main>
-  <footer class="footer">
-    <a class="footer__logo" href="index.html">Coder<span class="footer__logo-span">Movies</span></a>
-    <p class="footer__text">© Copyright 2023 - <b>Grupo 1</b> - CoderMovies</p>
-    <nav class="footer__nav">
-      <a href="https://www.instagram.com/coderhousebrasil" target="_blank">
-        <i class="fa-brands fa-instagram fa-lg footer__icons"></i>
-      </a>
-      <a href="https://github.com/filipezzo/CoderMovies" target="_blank">
-        <i class="fa-brands fa-github fa-lg footer__icons"></i>
-      </a>
-      <a href="mailto:estudantes@coderhouse.com" target="_blank">
-        <i class="fa-solid fa-envelope fa-lg footer__icons"></i>
-      </a>
-    </nav>
-  </footer>
-</body>
-
+  </body>
 </html>

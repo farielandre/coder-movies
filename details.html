@@ -22,119 +22,121 @@
 </head>
 
 <body>
-  <header class="header">
-    <h1 class="header__logo">
-      <a href="index.html">Coder<span class="header__logo-span">Movies</span></a>
-    </h1>
-    <nav>
-      <button class="header__genres btn">
-        Genres
-        <i class="fa-solid fa-chevron-down fa-sm"></i>
-      </button>
-      <ul class="header__dropdown hide">
-        <li>Drama</li>
-        <li>Fantasy</li>
-        <li>Historical</li>
-        <li>Horror</li>
-        <li>Musical</li>
-        <li>Noir</li>
-        <li>Romance</li>
-        <li>Science Fiction</li>
-        <li>Thriller</li>
-        <li>Western</li>
-        <li>Action</li>
-        <li>Adventure</li>
-        <li>Animated</li>
-        <li>Comedy</li>
-        <li>Crime</li>
-      </ul>
-      <form class="header__form">
-        <div class="header__form-wrapper">
-          <input type="text" class="header__form-input" placeholder="Search a movie" aria-label="Search a movie" />
-          <i class="fa-solid fa-magnifying-glass fa-sm"></i>
-        </div>
-      </form>
-      <button class="header__watchlist btn">
-        <a href="watchlist.html">
-          <i class="fa-solid fa-bookmark fa-sm"></i>
-          Watchlist
-        </a>
-      </button>
-      <button class="header__darkmode btn">
-        <i class="fa-solid fa-circle-half-stroke fa-lg"></i>
-      </button>
-    </nav>
-  </header>
-  <main class="movie__container">
-    <div class="movie__cover">
-      <img src="./assets/images/usual_suspects.jpg" alt="movie cover" />
-    </div>
-    <section class="movie__info">
-      <div class="movie__info-heading">
-        <h2 class="movie__info-title">The Usual Suspects</h2>
-        <span class="movie__info-dot">•</span>
-        <span class="movie__info-launch_duration">1995</span>
-        <span class="movie__info-dot">•</span>
-        <span class="movie__info-launch_duration">1h46m</span>
-        <ul class="movie__genres">
-          <li>Crime</li>
+  <div id="app">
+    <header class="header">
+      <h1 class="header__logo">
+        <a href="index.html">Coder<span class="header__logo-span">Movies</span></a>
+      </h1>
+      <nav>
+        <button class="header__genres btn">
+          Genres
+          <i class="fa-solid fa-chevron-down fa-sm"></i>
+        </button>
+        <ul class="header__dropdown hide">
           <li>Drama</li>
-          <li>Mistery</li>
+          <li>Fantasy</li>
+          <li>Historical</li>
+          <li>Horror</li>
+          <li>Musical</li>
+          <li>Noir</li>
+          <li>Romance</li>
+          <li>Science Fiction</li>
+          <li>Thriller</li>
+          <li>Western</li>
+          <li>Action</li>
+          <li>Adventure</li>
+          <li>Animated</li>
+          <li>Comedy</li>
+          <li>Crime</li>
         </ul>
+        <form class="header__form">
+          <div class="header__form-wrapper">
+            <input type="text" class="header__form-input" placeholder="Search a movie" aria-label="Search a movie" />
+            <i class="fa-solid fa-magnifying-glass fa-sm"></i>
+          </div>
+        </form>
+        <button class="header__watchlist btn">
+          <a href="watchlist.html">
+            <i class="fa-solid fa-bookmark fa-sm"></i>
+            Watchlist
+          </a>
+        </button>
+        <button class="header__darkmode btn">
+          <i class="fa-solid fa-circle-half-stroke fa-lg"></i>
+        </button>
+      </nav>
+    </header>
+    <main class="movie__container">
+      <div class="movie__cover">
+        <img src="./assets/images/usual_suspects.jpg" alt="movie cover" />
       </div>
-      <div class="movie__details">
-        <p class="movie__details-title">Director</p>
-        <p class="movie__details-content1">Bryan Singer</p>
-        <p class="movie__details-title">Writer</p>
-        <p class="movie__details-content1">Christopher McQuarrie</p>
-        <p class="movie__details-title">Cast</p>
-        <p class="movie__details-content1">Stephen Baldwin, Gabriel Byrne, Benicio Del Toro, Kevin Pollak, Kevin
-          Spacey, Chazz
-          Palminteri, Pete Postlethwaite</p>
-        <p class="movie__details-title">Storyline</p>
-        <p class="movie__details-content2">Following a truck hijack in New York, five criminals are arrested and
-          brought
-          together
-          for questioning. As none of them are guilty, they plan a revenge operation against the police. The operation
-          goes well, but then the influence of a legendary mastermind criminal called Keyser Söze is felt. It becomes
-          clear that each one of them has wronged Söze at some point and must pay back now. The payback job leaves 27
-          men
-          dead in a boat explosion, but the real question arises now: Who actually is Keyser Söze?
-        </p>
-        <h3>Photo Gallery</h3>
-        <div class="gallery__container">
+      <section class="movie__information">
+        <div class="movie__information-heading">
+          <h2 class="movie__information-title">The Usual Suspects</h2>
+          <span class="movie__information-dot">•</span>
+          <span class="movie__information-launch_duration">1995</span>
+          <span class="movie__information-dot">•</span>
+          <span class="movie__information-launch_duration">1h46m</span>
+          <ul class="movie__genres">
+            <li>Crime</li>
+            <li>Drama</li>
+            <li>Mistery</li>
+          </ul>
+          <button class="movie__information--btn ">
+            <a href="#">
+              <i class="fa-regular fa-bookmark fa-3xs"></i>
+              Add to list
+            </a>
+          </button>
+        </div>
+        <div class="movie__details">
+          <p class="movie__details-title">Director</p>
+          <p class="movie__details-content1">Bryan Singer</p>
+          <p class="movie__details-title">Writer</p>
+          <p class="movie__details-content1">Christopher McQuarrie</p>
+          <p class="movie__details-title">Cast</p>
+          <p class="movie__details-content1">Stephen Baldwin, Gabriel Byrne, Benicio Del Toro, Kevin Pollak, Kevin
+            Spacey, Chazz
+            Palminteri, Pete Postlethwaite</p>
+          <p class="movie__details-title">Storyline</p>
+          <p class="movie__details-content2">Following a truck hijack in New York, five criminals are arrested and
+            brought
+            together
+            for questioning. As none of them are guilty, they plan a revenge operation against the police. The operation
+            goes well, but then the influence of a legendary mastermind criminal called Keyser Söze is felt. It becomes
+            clear that each one of them has wronged Söze at some point and must pay back now. The payback job leaves 27
+            men
+            dead in a boat explosion, but the real question arises now: Who actually is Keyser Söze?
+          </p>
+          <p class="movie__details-rating">IMDB Rating</p>
+          <i class="fa-solid fa-star fa-sm"></i>
+          <span class="IMDB_rating">9.1/10</span>
+      </section>
+      <h3>Photo Gallery</h3>
+      <section class="gallery__container">
+        <div>
           <img src="./assets/images/image 9.png" alt="image 1 of the movie" />
           <img src="./assets/images/image 9.png" alt="image 2 of the movie" />
           <img src="./assets/images/image 9.png" alt="image 3 of the movie" />
         </div>
-    </section>
-    <section>
-      <button class="movie__info--btn">
-        <a href="#">
-          <i class="fa-regular fa-bookmark fa-3xs"></i>
-          Add to list
+      </section>
+    </main>
+    <footer class="footer">
+      <a class="footer__logo" href="index.html">Coder<span class="footer__logo-span">Movies</span></a>
+      <p class="footer__text">© Copyright 2023 - <b>Grupo 1</b> - CoderMovies</p>
+      <nav class="footer__nav">
+        <a href="https://www.instagram.com/coderhousebrasil" target="_blank">
+          <i class="fa-brands fa-instagram fa-lg footer__icons"></i>
         </a>
-      </button>
-      <p class="movie__details-rating">IMDB Rating</p>
-      <i class="fa-solid fa-star fa-sm"></i>
-      <span class="IMDB_rating">9.1/10</span>
-    </section>
-  </main>
-  <footer class="footer">
-    <a class="footer__logo" href="index.html">Coder<span class="footer__logo-span">Movies</span></a>
-    <p class="footer__text">© Copyright 2023 - <b>Grupo 1</b> - CoderMovies</p>
-    <nav class="footer__nav">
-      <a href="https://www.instagram.com/coderhousebrasil" target="_blank">
-        <i class="fa-brands fa-instagram fa-lg footer__icons"></i>
-      </a>
-      <a href="https://github.com/filipezzo/CoderMovies" target="_blank">
-        <i class="fa-brands fa-github fa-lg footer__icons"></i>
-      </a>
-      <a href="mailto:estudantes@coderhouse.com" target="_blank">
-        <i class="fa-solid fa-envelope fa-lg footer__icons"></i>
-      </a>
-    </nav>
-  </footer>
+        <a href="https://github.com/filipezzo/CoderMovies" target="_blank">
+          <i class="fa-brands fa-github fa-lg footer__icons"></i>
+        </a>
+        <a href="mailto:estudantes@coderhouse.com" target="_blank">
+          <i class="fa-solid fa-envelope fa-lg footer__icons"></i>
+        </a>
+      </nav>
+    </footer>
+  </div>
 </body>
 
 </html>

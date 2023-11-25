@@ -82,6 +82,13 @@ h3 {
   margin: 2.5rem 0rem 2rem 0rem;
 }
 
+/* Container */
+#app {
+  max-width: 1536px;
+  margin-inline: auto;
+  padding: 1rem 2rem;
+}
+
 /* Header */
 
 .header__logo {
@@ -137,6 +144,54 @@ h3 {
   background: var(--color-yellow);
   transition: all 0.3s;
   color: var(--color-dark-blue);
+}
+
+/* Movie List */
+.movielist__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  width: 100%;
+  margin-block: 2rem;
+}
+
+.movielist__card {
+  cursor: pointer;
+  position: relative;
+}
+
+.movielist__card:where(:hover, :focus) {
+  transform: scale(1.05);
+  transition: all 0.3s;
+}
+
+.movielist__card img {
+  border-radius: 0.75rem;
+  width: 220px;
+  object-fit: cover;
+  max-width: 100%;
+  z-index: 999;
+}
+
+.movielist__card-info {
+  position: absolute;
+  bottom: 10px;
+  background: var(--color-dark-blue);
+  padding: 0.25rem 0.5rem;
+  left: 10px;
+  border-radius: 20px;
+  border: 2px solid var(--color-yellow);
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.movielist__card-info span {
+  font-size: var(--font-s-sm);
+}
+
+.movielist__card-info .fa-star {
+  color: var(--color-yellow);
 }
 
 /* Details page */
@@ -217,6 +272,14 @@ h3 {
   color: var(--color-yellow);
 }
 
+/* Watchlist Page */
+.movielist__card .fa-bookmark {
+  position: absolute;
+  font-size: 2.5rem;
+  top: 15px;
+  right: 25px;
+  color: var(--color-yellow);
+}
 /* Footer */
 
 .footer {
