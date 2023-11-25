@@ -82,6 +82,13 @@ h3 {
   margin: 2.5rem 0rem 2rem 0rem;
 }
 
+/* Container */
+#app {
+  max-width: 1536px;
+  margin-inline: auto;
+  padding: 1rem 2rem;
+}
+
 /* Header */
 
 .header__logo {
