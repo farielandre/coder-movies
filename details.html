@@ -67,27 +67,19 @@
       </nav>
     </header>
     <main class="movie__container">
-      <div class="movie__cover">
-        <img src="./assets/images/usual_suspects.jpg" alt="movie cover" />
-      </div>
-      <section class="movie__information">
-        <div class="movie__information-heading">
-          <h2 class="movie__information-title">The Usual Suspects</h2>
-          <span class="movie__information-dot">•</span>
-          <span class="movie__information-launch_duration">1995</span>
-          <span class="movie__information-dot">•</span>
-          <span class="movie__information-launch_duration">1h46m</span>
-          <ul class="movie__genres">
-            <li>Crime</li>
-            <li>Drama</li>
-            <li>Mistery</li>
-          </ul>
-          <button class="movie__information--btn ">
-            <a href="#">
-              <i class="fa-regular fa-bookmark fa-3xs"></i>
-              Add to list
-            </a>
-          </button>
+      <img class="movie__cover" src="./assets/images/usual_suspects.jpg" alt="movie cover"/>
+      <section class="movie__info">
+        <div class="movie__info-heading">
+          <h2 class="movie__info-title">The Usual Suspects</h2>
+          <span class="movie__info-dot">•</span>
+          <span class="movie__info-extra">1995</span>
+          <span class="movie__info-dot">•</span>
+          <span class="movie__info-extra">1h46m</span>
+          <div class="movie__genres">
+            <p>Crime</p>
+            <p>Drama</p>
+            <p>Mistery</p>
+          </div>
         </div>
         <div class="movie__details">
           <p class="movie__details-title">Director</p>
@@ -108,17 +100,23 @@
             men
             dead in a boat explosion, but the real question arises now: Who actually is Keyser Söze?
           </p>
-          <p class="movie__details-rating">IMDB Rating</p>
-          <i class="fa-solid fa-star fa-sm"></i>
-          <span class="IMDB_rating">9.1/10</span>
+          <h3>Photo Gallery</h3>
+          <div class="gallery__container">
+            <img src="./assets/images/image 9.png" alt="image 1 of the movie" />
+            <img src="./assets/images/image 9.png" alt="image 2 of the movie" />
+            <img src="./assets/images/image 9.png" alt="image 3 of the movie" />
+          </div>
       </section>
-      <h3>Photo Gallery</h3>
-      <section class="gallery__container">
-        <div>
-          <img src="./assets/images/image 9.png" alt="image 1 of the movie" />
-          <img src="./assets/images/image 9.png" alt="image 2 of the movie" />
-          <img src="./assets/images/image 9.png" alt="image 3 of the movie" />
-        </div>
+      <section class="movie__add">
+        <button class="movie__add--btn">
+          <a href="#">
+            <i class="fa-regular fa-bookmark fa-3xs"></i>
+            Add to list
+          </a>
+        </button>
+        <p class="movie__add-rating">IMDB Rating</p>
+        <i class="fa-solid fa-star fa-sm IMDB__star"></i>
+        <span class="IMDB__rating">9.1/10</span>
       </section>
     </main>
     <footer class="footer">
