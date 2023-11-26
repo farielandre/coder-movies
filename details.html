@@ -66,32 +66,35 @@
         </button>
       </nav>
     </header>
-    <main class="movie__container">
-      <img class="movie__cover" src="./assets/images/usual_suspects.jpg" alt="movie cover"/>
-      <section class="movie__info">
+    <main class="details__container">
+      <section class="details__column-left">
+        <img class="movie__cover" src="./assets/images/usual_suspects.jpg" alt="movie cover"/>
+      </section>
+      
+      <section class="details__column-center">
         <div class="movie__info-heading">
           <h2 class="movie__info-title">The Usual Suspects</h2>
-          <span class="movie__info-dot">•</span>
-          <span class="movie__info-extra">1995</span>
-          <span class="movie__info-dot">•</span>
-          <span class="movie__info-extra">1h46m</span>
-          <div class="movie__genres">
-            <p>Crime</p>
-            <p>Drama</p>
-            <p>Mistery</p>
-          </div>
+          <p class="movie__info-dot">•</p>
+          <p class="movie__info-year">1995</p>
+          <p class="movie__info-dot">•</p>
+          <p class="movie__info-duration">1h46m</p>
+        </div>
+        <div class="movie__genres">
+          <p>Crime</p>
+          <p>Drama</p>
+          <p>Mistery</p>
         </div>
         <div class="movie__details">
-          <p class="movie__details-title">Director</p>
-          <p class="movie__details-content1">Bryan Singer</p>
-          <p class="movie__details-title">Writer</p>
-          <p class="movie__details-content1">Christopher McQuarrie</p>
-          <p class="movie__details-title">Cast</p>
-          <p class="movie__details-content1">Stephen Baldwin, Gabriel Byrne, Benicio Del Toro, Kevin Pollak, Kevin
+          <p class="movie__details-director">Director</p>
+          <p class="movie__details-director-name">Bryan Singer</p>
+          <p class="movie__details-writer">Writer</p>
+          <p class="movie__details-writer-name">Christopher McQuarrie</p>
+          <p class="movie__details-cast">Cast</p>
+          <p class="movie__details-cast-names">Stephen Baldwin, Gabriel Byrne, Benicio Del Toro, Kevin Pollak, Kevin
             Spacey, Chazz
             Palminteri, Pete Postlethwaite</p>
-          <p class="movie__details-title">Storyline</p>
-          <p class="movie__details-content2">Following a truck hijack in New York, five criminals are arrested and
+          <p class="movie__details-storyline">Storyline</p>
+          <p class="movie__details-storyline-text">Following a truck hijack in New York, five criminals are arrested and
             brought
             together
             for questioning. As none of them are guilty, they plan a revenge operation against the police. The operation
@@ -107,14 +110,14 @@
             <img src="./assets/images/image 9.png" alt="image 3 of the movie" />
           </div>
       </section>
-      <section class="movie__add">
-        <button class="movie__add--btn">
+      <section class="details__column-right">
+        <button class="movie__add">
           <a href="#">
             <i class="fa-regular fa-bookmark fa-3xs"></i>
             Add to list
           </a>
         </button>
-        <p class="movie__add-rating">IMDB Rating</p>
+        <p class="IMDB__rating-title">IMDB Rating</p>
         <i class="fa-solid fa-star fa-sm IMDB__star"></i>
         <span class="IMDB__rating">9.1/10</span>
       </section>

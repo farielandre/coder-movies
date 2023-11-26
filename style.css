@@ -76,6 +76,10 @@ body {
   color: var(--color-light-grey);
 }
 
+h2 {
+  line-height: 100%;
+}
+
 h3 {
   font-size: var(--font-s-xl);
   font-weight: var(--font-w-medium);
@@ -194,26 +198,28 @@ h3 {
   color: var(--color-yellow);
 }
 
-/* Details page */
+/* Details Page */
 
-.movie__container {
+.details__container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
   gap: 50px;
+  margin-top: 2rem;
+}
+
+.details__column-right {
+  margin-left: 100px;
 }
 
 .movie__cover {
   width: 300px;
 }
 
-.movie__genres {
-  display: flex;
-}
-
 .movie__info-heading {
   display: flex;
+  align-items: flex-start;
 }
 
 .movie__info-title {
@@ -221,56 +227,70 @@ h3 {
   font-weight: var(--font-w-bold);
 }
 
-.movie__info-extra {
+.movie__info-year,
+.movie__info-duration {
   font-size: var(--font-s-2m);
   font-weight: var(--font-w-light);
+  padding-top: 8px;
 }
 
 .movie__info-dot {
   color: var(--color-yellow);
-  margin: 0 0.4rem 0 0.4rem;
+  font-size: var(--font-s-lg);
+  padding: 7px 7px 0 10px;
+}
+
+.movie__genres {
+  display: flex;
+  gap: 10px;
+  margin: 15px 0px 30px 0px;
 }
 
 .movie__genres p {
   color: var(--color-grey);
-  text-align: center;
   font-size: var(--font-s-sm);
   font-weight: var(--font-w-medium);
-  padding: 0.4rem;
+  padding: 0 0.7rem 0 0.7rem;
   border-radius: 0.75rem;
   border: 1px solid var(--color-grey);
+  height: 25px;
 }
 
-.movie_details {
+.movie__details-director,
+.movie__details-writer,
+.movie__details-cast,
+.movie__details-storyline {
   font-size: var(--font-s-2m);
   font-weight: var(--font-w-medium);
 }
 
-.movie__details-content1 {
+.movie__details-director-name,
+.movie__details-writer-name,
+.movie__details-cast-names {
   color: var(--color-yellow);
   margin-bottom: 0.5rem;
 }
 
-.movie__add {
-  width: 500px;
-  margin-left: 100px;
+.movie__details-storyline-text {
+  font-weight: var(--font-w-regular);
 }
 
-.movie__add--btn {
+.movie__add {
   color: var(--color-dark-blue);
   background: var(--color-yellow);
   padding: 0.5rem 1rem 0.5rem 1rem;
   border-radius: 0.75rem;
   font-size: var(--font-s-2m);
   margin-bottom: 50px;
+  width: 140px;
 }
 
-.movie__add--btn:hover {
-  transition: all 0.3s;
-  font-weight: var(--font-w-xbold);
+.movie__add:hover {
+  transition: all 0.5s;
+  font-weight: var(--font-w-black);
 }
 
-.movie__add-rating {
+.IMDB__rating-title {
   font-size: var(--font-s-lg);
   font-weight: var(--font-w-bold);
 }
@@ -293,6 +313,7 @@ h3 {
   right: 25px;
   color: var(--color-yellow);
 }
+
 /* Footer */
 
 .footer {
