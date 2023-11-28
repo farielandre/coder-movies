@@ -317,6 +317,9 @@ h3 {
 /* Footer */
 
 .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   height: 7.7rem;
   border-top: 0.125rem solid;
   border-color: var(--color-yellow);
@@ -335,6 +338,7 @@ h3 {
 }
 
 .footer__text {
+  width: auto;
   font-size: var(--font-s-m);
   font-weight: var(--font-w-regular);
 }
