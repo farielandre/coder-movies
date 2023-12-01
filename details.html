@@ -25,9 +25,7 @@
   <div id="app">
     <header class="header">
       <h1 class="header__logo">
-        <a href="index.html"
-          >Coder<span class="header__logo-span">Movies</span></a
-        >
+        <a href="index.html">Coder<span class="header__logo-span">Movies</span></a>
       </h1>
       <nav class="header__nav">
         <button class="header__genres btn">
@@ -53,12 +51,7 @@
         </ul>
         <form class="header__form">
           <div class="header__form-wrapper">
-            <input
-              type="text"
-              class="header__form-input"
-              placeholder="Search a movie"
-              aria-label="Search a movie"
-            />
+            <input type="text" class="header__form-input" placeholder="Search a movie" aria-label="Search a movie" />
             <i class="fa-solid fa-magnifying-glass fa-sm"></i>
           </div>
         </form>
@@ -68,16 +61,15 @@
             Watchlist
           </a>
         </button>
-        <button class="header__darkmode btn">
+        <button class="header__darkmode btn" id="btn__circle">
           <i class="fa-solid fa-circle-half-stroke fa-lg"></i>
         </button>
       </nav>
     </header>
     <main class="details__container">
       <section class="details__column-left">
-        <img class="movie__cover" src="./assets/images/usual_suspects.jpg" alt="movie cover"/>
+        <img class="movie__cover" src="./assets/images/usual_suspects.jpg" alt="movie cover" />
       </section>
-      
       <section class="details__column-center">
         <div class="movie__info-heading">
           <h2 class="movie__info-title">The Usual Suspects</h2>
@@ -110,12 +102,6 @@
             men
             dead in a boat explosion, but the real question arises now: Who actually is Keyser Söze?
           </p>
-          <h3>Photo Gallery</h3>
-          <div class="gallery__container">
-            <img src="./assets/images/image 9.png" alt="image 1 of the movie" />
-            <img src="./assets/images/image 9.png" alt="image 2 of the movie" />
-            <img src="./assets/images/image 9.png" alt="image 3 of the movie" />
-          </div>
       </section>
       <section class="details__column-right">
         <button class="movie__add">
@@ -128,6 +114,23 @@
         <i class="fa-solid fa-star fa-sm IMDB__star"></i>
         <span class="IMDB__rating">9.1/10</span>
       </section>
+      <div class="gallery__container">
+        <p>Photo Gallery</p>
+        <div class="gallery__photos">
+          <img src="./assets/images/image_movie1.jpg" alt="image 1 of the movie" />
+          <img src="./assets/images/image_movie2.jpg" alt="image 2 of the movie" />
+          <img src="./assets/images/image_movie3.jpg" alt="image 3 of the movie" />
+          <img src="./assets/images/image_movie4.jpg" alt="image 4 of the movie" />
+          <img src="./assets/images/image_movie1.jpg" alt="image 5 of the movie" />
+          <img src="./assets/images/image_movie2.jpg" alt="image 6 of the movie" />
+          <img src="./assets/images/image_movie3.jpg" alt="image 7 of the movie" />
+          <img src="./assets/images/image_movie4.jpg" alt="image 8 of the movie" />
+          <img src="./assets/images/image_movie1.jpg" alt="image 9 of the movie" />
+          <img src="./assets/images/image_movie2.jpg" alt="image 10 of the movie" />
+          <img src="./assets/images/image_movie3.jpg" alt="image 11 of the movie" />
+          <img src="./assets/images/image_movie4.jpg" alt="image 12 of the movie" />
+        </div>
+      </div>
     </main>
     <footer class="footer">
       <a class="footer__logo" href="index.html">Coder<span class="footer__logo-span">Movies</span></a>

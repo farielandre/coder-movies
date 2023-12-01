@@ -160,13 +160,12 @@ h3 {
   outline: none;
   width: 80%;
 }
-.header-__watchlist {
+
+.header__watchlist {
   max-width: 11rem;
 }
+
 .header__darkmode {
-  border-radius: 50%;
-  border: 1px solid var(--color-yellow);
-  width: 2.5rem;
   margin-left: auto;
 }
 
@@ -186,7 +185,13 @@ h3 {
   color: var(--color-dark-blue);
 }
 
+#btn__circle {
+  border-radius: 100%;
+}
+
+
 /* Movie List */
+
 .movielist__container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -241,20 +246,38 @@ h3 {
 /* Details Page */
 
 .details__container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 50px;
+  display: grid;
   margin-top: 2rem;
+  gap: 30px;
+  grid-template-columns: 0.8fr 2fr 1fr;
+  grid-auto-rows: auto;
+  grid-template-areas:
+    "details__column-left details__column-center details__column-right"
+    "details__column-left gallery__container gallery__container"
+}
+
+.details__column-left {
+  grid-area: details__column-left;
+  /* background-color: lightblue; */
+}
+
+.details__column-center {
+  grid-area: details__column-center;
+  /* background-color: lightcoral; */
 }
 
 .details__column-right {
-  margin-left: 100px;
+  grid-area: details__column-right;
+  /* background-color: lightgreen; */
+}
+
+.gallery__container {
+  grid-area: gallery__container;
+  /* background-color: lightsalmon; */
 }
 
 .movie__cover {
-  width: 300px;
+  max-width: 100%;
 }
 
 .movie__info-heading {
@@ -345,7 +368,36 @@ h3 {
   color: var(--color-yellow);
 }
 
+/* Photo gallery */
+
+.gallery__container p {
+  font-size: var(--font-s-xl);
+  font-weight: var(--font-w-medium);
+  margin-bottom: 1.5rem;
+}
+
+.gallery__photos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.gallery__container img {
+  border-radius: 0.75rem;
+  width: 250px;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  cursor: pointer;
+  position: relative;
+}
+
+.gallery__container img:hover {
+  transform: scale(1.02);
+  transition: all 0.3s;
+}
+
 /* Watchlist Page */
+
 .movielist__card .fa-bookmark {
   position: absolute;
   font-size: 2.5rem;
