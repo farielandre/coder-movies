@@ -91,9 +91,33 @@ h3 {
   max-width: 1536px;
   margin-inline: auto;
   padding: 1rem 2rem;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
 }
 
 /* Header */
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6rem;
+  margin-bottom: 4rem;
+}
+
+.header--home {
+  margin-bottom: 1rem;
+}
+
+.header__nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6rem;
+  flex: 1;
+}
 
 .header__logo {
   color: var(--color-light-grey);
@@ -120,6 +144,14 @@ h3 {
   color: var(--color-dark-blue);
   width: 100%;
   font-size: var(--font-s-lg);
+  padding: 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__form-wrapper .fa-magnifying-glass {
+  cursor: pointer;
 }
 
 .header__form-input {
@@ -128,10 +160,14 @@ h3 {
   outline: none;
   width: 80%;
 }
-
+.header-__watchlist {
+  max-width: 11rem;
+}
 .header__darkmode {
   border-radius: 50%;
   border: 1px solid var(--color-yellow);
+  width: 2.5rem;
+  margin-left: auto;
 }
 
 /* Buttons */
@@ -156,7 +192,11 @@ h3 {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 1rem;
   width: 100%;
-  margin-block: 2rem;
+  margin-block: 2.5rem;
+}
+
+.movielist__heading-home {
+  grid-column: 1/-1;
 }
 
 .movielist__card {
@@ -318,17 +358,22 @@ h3 {
 
 .footer {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  height: 7.7rem;
-  border-top: 0.125rem solid;
-  border-color: var(--color-yellow);
+  margin-top: 1rem;
+
+  margin-top: 2rem;
+}
+
+.footer__text {
+  text-align: center;
+  flex: 1;
 }
 
 .footer__logo {
   color: var(--color-light-grey);
   font-size: var(--font-s-2lg);
   font-weight: var(--font-w-regular);
+  flex: 1;
 }
 
 .footer__logo-span {
@@ -337,14 +382,13 @@ h3 {
   font-weight: var(--font-w-black);
 }
 
-.footer__text {
-  width: auto;
-  font-size: var(--font-s-m);
-  font-weight: var(--font-w-regular);
-}
-
 .footer__nav {
   color: var(--color-yellow);
+  flex: 1;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: end;
 }
 
 .footer__icons:hover {
