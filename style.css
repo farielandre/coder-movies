@@ -189,7 +189,6 @@ h3 {
   border-radius: 100%;
 }
 
-
 /* Movie List */
 
 .movielist__container {
@@ -253,27 +252,24 @@ h3 {
   grid-auto-rows: auto;
   grid-template-areas:
     "details__column-left details__column-center details__column-right"
-    "details__column-left gallery__container gallery__container"
+    "details__column-left gallery__container gallery__container";
 }
 
 .details__column-left {
   grid-area: details__column-left;
-  /* background-color: lightblue; */
 }
 
 .details__column-center {
   grid-area: details__column-center;
-  /* background-color: lightcoral; */
 }
 
 .details__column-right {
   grid-area: details__column-right;
-  /* background-color: lightgreen; */
+  justify-self: end;
 }
 
 .gallery__container {
   grid-area: gallery__container;
-  /* background-color: lightsalmon; */
 }
 
 .movie__cover {
@@ -389,6 +385,7 @@ h3 {
   object-fit: cover;
   cursor: pointer;
   position: relative;
+  flex: 1;
 }
 
 .gallery__container img:hover {
