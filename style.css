@@ -193,6 +193,16 @@ h3 {
 
 #btn__circle {
   border-radius: 100%;
+  color: var(--color-light-grey);
+  padding: 0.5rem;
+  border: 1px solid var(--color-yellow);
+  font-size: var(--font-s-2m);
+}
+
+#btn__circle:hover {
+  background: var(--color-yellow);
+  transition: all 0.3s;
+  color: var(--color-dark-blue);
 }
 
 /* Movie List */
