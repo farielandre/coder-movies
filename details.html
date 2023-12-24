@@ -20,144 +20,134 @@
   <link rel="stylesheet" href="style.css" />
   <title>CoderMovies - Details</title>
 </head>
-<body>
-  <div id="app">
-    <header class="header header--home">
-      <h1 class="header__logo">
-        <a href="index.html"
-          >Coder<span class="header__logo-span">Movies</span></a
-        >
 
+<body class="app">
+  <header>
+    <nav class="header__nav">
+      <h1 class="header__logo">
+        <a href="index.html">Coder<span class="header__logo-span">Movies</span></a>
         <button class="hamburger hide">
           <i class="fa-solid fa-bars fa-2xs"></i>
         </button>
       </h1>
-      <nav class="header__nav">
-        <button class="header__genres btn">
-          Genres
-          <i class="fa-solid fa-chevron-down fa-sm"></i>
-        </button>
-        <ul class="header__dropdown hide">
-          <li>Drama</li>
-          <li>Fantasy</li>
-          <li>Historical</li>
-          <li>Horror</li>
-          <li>Musical</li>
-          <li>Noir</li>
-          <li>Romance</li>
-          <li>Science Fiction</li>
-          <li>Thriller</li>
-          <li>Western</li>
-          <li>Action</li>
-          <li>Adventure</li>
-          <li>Animated</li>
-          <li>Comedy</li>
-          <li>Crime</li>
-        </ul>
-        <form class="header__form">
-          <div class="header__form-wrapper">
-            <input
-              type="text"
-              class="header__form-input"
-              placeholder="Search a movie"
-              aria-label="Search a movie"
-            />
-            <i class="fa-solid fa-magnifying-glass fa-sm"></i>
-          </div>
-        </form>
-        <button class="header__watchlist btn">
-          <a href="watchlist.html">
-            <i class="fa-solid fa-bookmark fa-sm"></i>
-            Watchlist
-          </a>
-        </button>
-        <button class="header__darkmode" id="btn__circle">
-          <i class="fa-solid fa-circle-half-stroke fa-lg"></i>
-        </button>
-      </nav>
-    </header>
-    <main class="details__container">
-      <section class="details__column-left">
-        <img class="movie__cover" src="./assets/images/usual_suspects.jpg" alt="movie cover" />
-      </section>
-      <section class="details__column-center">
-        <div class="movie__info-heading">
-          <h2 class="movie__info-title">The Usual Suspects</h2>
-          <p class="movie__info-dot">•</p>
-          <p class="movie__info-year">1995</p>
-          <p class="movie__info-dot">•</p>
-          <p class="movie__info-duration">1h46m</p>
-        </div>
-        <div class="movie__genres">
-          <p>Crime</p>
-          <p>Drama</p>
-          <p>Mistery</p>
-        </div>
-        <div class="movie__details">
-          <p class="movie__details-director">Director</p>
-          <p class="movie__details-director-name">Bryan Singer</p>
-          <p class="movie__details-writer">Writer</p>
-          <p class="movie__details-writer-name">Christopher McQuarrie</p>
-          <p class="movie__details-cast">Cast</p>
-          <p class="movie__details-cast-names">Stephen Baldwin, Gabriel Byrne, Benicio Del Toro, Kevin Pollak, Kevin
-            Spacey, Chazz
-            Palminteri, Pete Postlethwaite</p>
-          <p class="movie__details-storyline">Storyline</p>
-          <p class="movie__details-storyline-text">Following a truck hijack in New York, five criminals are arrested and
-            brought
-            together
-            for questioning. As none of them are guilty, they plan a revenge operation against the police. The operation
-            goes well, but then the influence of a legendary mastermind criminal called Keyser Söze is felt. It becomes
-            clear that each one of them has wronged Söze at some point and must pay back now. The payback job leaves 27
-            men
-            dead in a boat explosion, but the real question arises now: Who actually is Keyser Söze?
-          </p>
-      </section>
-      <section class="details__column-right">
-        <button class="movie__add">
-          <a href="#">
-            <i class="fa-regular fa-bookmark fa-3xs"></i>
-            Add to list
-          </a>
-        </button>
-        <p class="IMDB__rating-title">IMDB Rating</p>
-        <i class="fa-solid fa-star fa-sm IMDB__star"></i>
-        <span class="IMDB__rating">9.1/10</span>
-      </section>
-      <div class="gallery__container">
-        <p>Photo Gallery</p>
-        <div class="gallery__photos">
-          <img src="./assets/images/image_movie1.jpg" alt="image 1 of the movie" />
-          <img src="./assets/images/image_movie2.jpg" alt="image 2 of the movie" />
-          <img src="./assets/images/image_movie3.jpg" alt="image 3 of the movie" />
-          <img src="./assets/images/image_movie4.jpg" alt="image 4 of the movie" />
-          <img src="./assets/images/image_movie1.jpg" alt="image 5 of the movie" />
-          <img src="./assets/images/image_movie2.jpg" alt="image 6 of the movie" />
-          <img src="./assets/images/image_movie3.jpg" alt="image 7 of the movie" />
-          <img src="./assets/images/image_movie4.jpg" alt="image 8 of the movie" />
-          <img src="./assets/images/image_movie1.jpg" alt="image 9 of the movie" />
-          <img src="./assets/images/image_movie2.jpg" alt="image 10 of the movie" />
-          <img src="./assets/images/image_movie3.jpg" alt="image 11 of the movie" />
-          <img src="./assets/images/image_movie4.jpg" alt="image 12 of the movie" />
+      <div class="header__genres">
+        <button class="btn">Genres <i class="fa-solid fa-chevron-down fa-sm"></i></button>
+        <div class="header__genres--content">
+          <a href="#">Action</a>
+          <a href="#">Adventure</a>
+          <a href="#">Animated</a>
+          <a href="#">Comedy</a>
+          <a href="#">Crime</a>
+          <a href="#">Drama</a>
+          <a href="#">Fantasy</a>
+          <a href="#">Historical</a>
+          <a href="#">Horror</a>
+          <a href="#">Musical</a>
+          <a href="#">Noir</a>
+          <a href="#">Romance</a>
+          <a href="#">Science Fiction</a>
+          <a href="#">Thriller</a>
+          <a href="#">Western</a>
         </div>
       </div>
-    </main>
-    <footer class="footer">
-      <a class="footer__logo" href="index.html">Coder<span class="footer__logo-span">Movies</span></a>
-      <p class="footer__text">© Copyright 2023 - <b>Grupo 1</b> - CoderMovies</p>
-      <nav class="footer__nav">
-        <a href="https://www.instagram.com/coderhousebrasil" target="_blank">
-          <i class="fa-brands fa-instagram fa-lg footer__icons"></i>
+      <form class="header__form">
+        <div class="header__form-wrapper">
+          <input type="text" class="header__form-input" placeholder="Search a movie" aria-label="Search a movie" />
+          <i class="fa-solid fa-magnifying-glass fa-sm"></i>
+        </div>
+      </form>
+      <button class="header__watchlist btn">
+        <a href="watchlist.html">
+          <i class="fa-solid fa-bookmark fa-sm"></i>
+          Watchlist
         </a>
-        <a href="https://github.com/filipezzo/CoderMovies" target="_blank">
-          <i class="fa-brands fa-github fa-lg footer__icons"></i>
+      </button>
+      <button class="header__darkmode" id="btn__circle">
+        <i class="fa-solid fa-circle-half-stroke fa-lg"></i>
+      </button>
+    </nav>
+  </header>
+  <main class="details__container">
+    <section class="details__column-left">
+      <img class="movie__cover" src="./assets/images/usual_suspects.jpg" alt="movie cover" />
+    </section>
+    <section class="details__column-center">
+      <div class="movie__info-heading">
+        <h2 class="movie__info-title">The Usual Suspects</h2>
+        <p class="movie__info-dot">•</p>
+        <p class="movie__info-year">1995</p>
+        <p class="movie__info-dot">•</p>
+        <p class="movie__info-duration">1h46m</p>
+      </div>
+      <div class="movie__genres">
+        <p>Crime</p>
+        <p>Drama</p>
+        <p>Mistery</p>
+      </div>
+      <div class="movie__details">
+        <p class="movie__details-director">Director</p>
+        <p class="movie__details-director-name">Bryan Singer</p>
+        <p class="movie__details-writer">Writer</p>
+        <p class="movie__details-writer-name">Christopher McQuarrie</p>
+        <p class="movie__details-cast">Cast</p>
+        <p class="movie__details-cast-names">Stephen Baldwin, Gabriel Byrne, Benicio Del Toro, Kevin Pollak, Kevin
+          Spacey, Chazz
+          Palminteri, Pete Postlethwaite</p>
+        <p class="movie__details-storyline">Storyline</p>
+        <p class="movie__details-storyline-text">Following a truck hijack in New York, five criminals are arrested and
+          brought
+          together
+          for questioning. As none of them are guilty, they plan a revenge operation against the police. The operation
+          goes well, but then the influence of a legendary mastermind criminal called Keyser Söze is felt. It becomes
+          clear that each one of them has wronged Söze at some point and must pay back now. The payback job leaves 27
+          men
+          dead in a boat explosion, but the real question arises now: Who actually is Keyser Söze?
+        </p>
+    </section>
+    <section class="details__column-right">
+      <button class="movie__add">
+        <a href="#">
+          <i class="fa-regular fa-bookmark fa-3xs"></i>
+          Add to list
         </a>
-        <a href="mailto:estudantes@coderhouse.com" target="_blank">
-          <i class="fa-solid fa-envelope fa-lg footer__icons"></i>
-        </a>
-      </nav>
-    </footer>
-  </div>
+      </button>
+      <p class="IMDB__rating-title">IMDB Rating</p>
+      <i class="fa-solid fa-star fa-sm IMDB__star"></i>
+      <span class="IMDB__rating">9.1/10</span>
+    </section>
+    <div class="gallery__container">
+      <p>Photo Gallery</p>
+      <div class="gallery__photos">
+        <img src="./assets/images/image_movie1.jpg" alt="image 1 of the movie" />
+        <img src="./assets/images/image_movie2.jpg" alt="image 2 of the movie" />
+        <img src="./assets/images/image_movie3.jpg" alt="image 3 of the movie" />
+        <img src="./assets/images/image_movie4.jpg" alt="image 4 of the movie" />
+        <img src="./assets/images/image_movie1.jpg" alt="image 5 of the movie" />
+        <img src="./assets/images/image_movie2.jpg" alt="image 6 of the movie" />
+        <img src="./assets/images/image_movie3.jpg" alt="image 7 of the movie" />
+        <img src="./assets/images/image_movie4.jpg" alt="image 8 of the movie" />
+        <img src="./assets/images/image_movie1.jpg" alt="image 9 of the movie" />
+        <img src="./assets/images/image_movie2.jpg" alt="image 10 of the movie" />
+        <img src="./assets/images/image_movie3.jpg" alt="image 11 of the movie" />
+        <img src="./assets/images/image_movie4.jpg" alt="image 12 of the movie" />
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <a class="footer__logo" href="index.html">Coder<span class="footer__logo-span">Movies</span></a>
+    <p class="footer__text">© Copyright 2023 - <b>Grupo 1</b> - CoderMovies</p>
+    <nav class="footer__nav">
+      <a href="https://www.instagram.com/coderhousebrasil" target="_blank">
+        <i class="fa-brands fa-instagram fa-lg footer__icons"></i>
+      </a>
+      <a href="https://github.com/filipezzo/CoderMovies" target="_blank">
+        <i class="fa-brands fa-github fa-lg footer__icons"></i>
+      </a>
+      <a href="mailto:estudantes@coderhouse.com" target="_blank">
+        <i class="fa-solid fa-envelope fa-lg footer__icons"></i>
+      </a>
+    </nav>
+  </footer>
 </body>
 
 </html>
