@@ -17,8 +17,8 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png" />
   <link rel="manifest" href="./assets/favicon/site.webmanifest" />
-  <link rel="stylesheet" href="style.css" />
-  <script src="main.js"></script>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <script src="./assets/js/script.js"></script>
   <title>CoderMovies - Watchlist</title>
 </head>
 
@@ -69,15 +69,15 @@
       <button class="hamburger hide">
         <i class="fa-solid fa-bars fa-2xs"></i>
       </button>
-      <!-- Menu hamburger -->
-      <menu class="hamburger__menu hide">
-        <i id="burger__icon" class="fa fa-bars" onclick="clickHamburger()"></i>
-        <div id="hamburger__items">
+      <!-- Mobile menu -->
+      <menu class="mobile__menu hide">
+        <i id="burger__icon" class="fa fa-bars" onclick="mobileMenu()"></i>
+        <div id="mobile__items">
           <a href="index.html">Home</a>
           <a href="watchlist.html">Watchlist</a>
         </div>
       </menu>
-      <!-- Fim menu hamburger -->
+      <!-- Mobile menu end -->
     </nav>
   </header>
   <main class="container__main">
