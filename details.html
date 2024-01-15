@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="lightmode">
 
 <head>
   <meta charset="UTF-8" />
@@ -28,9 +28,11 @@
       <h1 class="header__logo">
         <a href="index.html">Coder<span class="header__logo-span">Movies</span></a>
       </h1>
+      <!-- Logo mobile -->
       <h1 class="header__logo--condensed hide">
         <a href="index.html">C<span class="header__logo--condensed-span">M</span></a>
       </h1>
+      <!-- Logo mobile end -->
       <div class="header__genres">
         <button class="btn">Genres <i class="fa-solid fa-chevron-down fa-sm"></i></button>
         <div class="header__genres--content">
@@ -64,7 +66,7 @@
         </a>
       </button>
       <button class="header__darkmode" id="btn__circle">
-        <i class="fa-solid fa-circle-half-stroke fa-lg"></i>
+        <i class="fa-solid fa-circle-half-stroke fa-lg" onclick="toggleColor()"></i>
       </button>
       <button class="hamburger hide">
         <i class="fa-solid fa-bars fa-2xs"></i>
@@ -163,6 +165,7 @@
       </a>
     </nav>
   </footer>
+  <script src="./assets/js/script.js"></script>
 </body>
 
 </html>

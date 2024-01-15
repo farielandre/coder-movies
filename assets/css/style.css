@@ -70,6 +70,16 @@ button {
   --font-w-light: 300;
 }
 
+.lightmode {
+  /* font-color */
+  --color-dark-blue: white;
+  --color-mid-blue: #161a26;
+  --color-grey: #6b7280;
+  --color-yellow: #fbbf24;
+  --color-light-grey: #030712;
+  --color-black: #000000;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -592,6 +602,10 @@ h3 {
 
   #burger__icon {
     cursor: pointer;
+  }  
+
+  #burger__icon:hover {
+    color: var(--color-yellow);
   }
 }
 
