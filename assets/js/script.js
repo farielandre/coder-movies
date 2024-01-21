@@ -1,18 +1,26 @@
+// // API - Movie list home
+// const apiKey = "8e98fee1";
+
+// fetch(`http://www.omdbapi.com/?apikey=${apiKey}`)
+//   .then((response) => response.json())
+//   .then((json) => console.log(json));
+
+
 // API - Movie search
 
 const searchForm = document.getElementById("header__form");
-const keyAPI = "8e98fee1";
+const apiKey = "8e98fee1";
 
 searchForm.onsubmit = (ev) => {
   ev.preventDefault();
-  const pesquisa = ev.target.pesquisa.value;
+  const searchMovies = ev.target.searchMovies.value;
 
-  if (pesquisa == "") {
+  if (searchMovies == "") {
     alert("Type the movie's name");
     return;
   }
 
-  fetch(`http://www.omdbapi.com/?s=${pesquisa}&apikey=${keyAPI}`)
+  fetch(`http://www.omdbapi.com/?s=${searchMovies}&apikey=${apiKey}`)
     .then((response) => response.json())
     .then((json) => loadMovies(json));
 }
