@@ -20,7 +20,7 @@ searchForm.onsubmit = (ev) => {
     return;
   }
 
-  fetch(`http://www.omdbapi.com/?s=${searchMovies}&apikey=${apiKey}`)
+  fetch(`https://www.omdbapi.com/?s=${searchMovies}&apikey=${apiKey}`)
     .then((response) => response.json())
     .then((json) => loadMovies(json));
 }
