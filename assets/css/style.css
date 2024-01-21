@@ -232,6 +232,11 @@ h3 {
   border: none;
   outline: none;
   width: 80%;
+  color: var(--color-dark-blue);
+}
+
+.fa-magnifying-glass:hover {
+  color: var(--color-yellow);
 }
 
 /* Header Watchlist Button*/

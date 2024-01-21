@@ -52,10 +52,10 @@
           <a href="#">Western</a>
         </div>
       </div>
-      <form class="header__form">
+      <form class="header__form" id="header__form">
         <div class="header__form-wrapper">
-          <input type="text" class="header__form-input" placeholder="Search a movie" aria-label="Search a movie" />
-          <i class="fa-solid fa-magnifying-glass fa-sm"></i>
+          <input name="pesquisa" type="text" class="header__form-input" placeholder="Search a movie" aria-label="Search a movie" />
+          <button><i class="fa-solid fa-magnifying-glass fa-sm"></i></button>
         </div>
       </form>
       <button class="header__watchlist btn">
@@ -80,7 +80,8 @@
   </header>
   <main class="container__main">
     <h3>Featured Movies</h3>
-    <div class="movielist__container">
+    <div class="movielist__container" id="movielist__container">
+
       <div class="movielist__card">
         <a href="details.html">
           <img src="./assets/images/image 10.png" alt="capa do filme 1" />
@@ -164,7 +165,6 @@
           <span>9.1</span>
         </div>
       </div>
-
       <div class="movielist__card">
         <img src="./assets/images/image 9.png" alt="capa do filme 6" />
         <div class="movielist__card-info">
@@ -172,6 +172,7 @@
           <span>9.1</span>
         </div>
       </div>
+      
     </div>
   </main>
   <footer class="footer">
@@ -183,7 +184,7 @@
       <a href="https://www.instagram.com/coderhousebrasil" target="_blank">
         <i class="fa-brands fa-instagram fa-lg footer__icons"></i>
       </a>
-      <a href="https://github.com/filipezzo/CoderMovies" target="_blank">
+      <a href="https://github.com/farielandre/coder-movies" target="_blank">
         <i class="fa-brands fa-github fa-lg footer__icons"></i>
       </a>
       <a href="mailto:estudantes@coderhouse.com" target="_blank">
