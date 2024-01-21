@@ -17,7 +17,7 @@ searchForm.onsubmit = (ev) => {
     .then((json) => loadMovies(json));
 }
 
-// API - Search result
+// API - Search result 
 
 const loadMovies = (json) => {
   const movieList = document.querySelector("div.movielist__container");
