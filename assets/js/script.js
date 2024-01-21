@@ -1,4 +1,4 @@
-// // API - Movie list home
+// API - Movie list home
 // const apiKey = "8e98fee1";
 
 // fetch(`http://www.omdbapi.com/?apikey=${apiKey}`)
@@ -20,7 +20,7 @@ searchForm.onsubmit = (ev) => {
     return;
   }
 
-  fetch(`https://www.omdbapi.com/?s=${searchMovies}&apikey=${apiKey}`)
+  fetch(`https://www.omdbapi.com/?apikey=${apiKey}&s=${searchMovies}`)
     .then((response) => response.json())
     .then((json) => loadMovies(json));
 }
