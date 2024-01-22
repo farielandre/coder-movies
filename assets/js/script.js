@@ -1,74 +1,98 @@
 // API - Movie list home
-// const apiKey = "8e98fee1";
 
-// fetch(`http://www.omdbapi.com/?apikey=${apiKey}`)
-//   .then((response) => response.json())
-//   .then((json) => console.log(json));
+const apiKey = "8e98fee1";
 
+fetch(`https://www.omdbapi.com/?s=Fun&apikey=${apiKey}`)
+  .then(response => response.json())
+  .then(data => homeMovies(data));
+
+  const homeMovies = (json) => {
+    const movieList = document.querySelector("div.movielist__container");
+    movieList.innerHTML = "";
+
+    json.Search.forEach(element => {
+      let movielistCard = document.createElement("div");
+
+      movielistCard.classList.add("movielist__card");
+      movielistCard.innerHTML = `
+  <a href="details.html">
+    <img src="${element.Poster}" alt="${element.Title} movie poster"/>
+  </a>
+  <div class="movielist__card-info">
+    <i class="fa-solid fa-star fa-2xs"></i>
+    <span>9.1</span>
+  </div>
+  `
+      movieList.appendChild(movielistCard);
+    });
+
+  }
 
 // API - Movie search
 
 const searchForm = document.getElementById("header__form");
-const apiKey = "8e98fee1";
 
-searchForm.onsubmit = (ev) => {
-  ev.preventDefault();
-  const searchMovies = ev.target.searchMovies.value;
+    searchForm.onsubmit = (ev) => {
+      ev.preventDefault();
+      const searchMovies = ev.target.searchMovies.value;
 
-  if (searchMovies == "") {
-    alert("Type the movie's name");
-    return;
-  }
+      if (searchMovies == "") {
+        alert("Type the movie's name");
+        return;
+      }
 
-  fetch(`https://www.omdbapi.com/?apikey=${apiKey}&s=${searchMovies}`)
-    .then((response) => response.json())
-    .then((json) => loadMovies(json));
-}
+      fetch(`https://www.omdbapi.com/?apikey=${apiKey}&s=${searchMovies}`)
+        .then((response) => response.json())
+        .then((json) => loadMovies(json));
+    }
 
-// API - Search result 
+    // API - Search result 
 
-const loadMovies = (json) => {
-  const movieList = document.querySelector("div.movielist__container");
-  movieList.innerHTML = "";
+    const loadMovies = (json) => {
+      const movieList = document.querySelector("div.movielist__container");
+      movieList.innerHTML = "";
 
-  if (json.Response == "False") {
-    alert("Movie not found");
-    return;
-  }
+      if (json.Response == "False") {
+        alert("Movie not found");
+        return;
+      }
 
-  json.Search.forEach(element => {
-    let movielistCard = document.createElement("div");
+      json.Search.forEach(element => {
+        let movielistCard = document.createElement("div");
 
-    movielistCard.classList.add("movielist__card");
-    movielistCard.innerHTML = `<a href="details.html">
-    <img src="${element.Poster}" /></a>
+        movielistCard.classList.add("movielist__card");
+        movielistCard.innerHTML = `
+    <a href="details.html">
+      <img src="${element.Poster}" alt="${element.Title} movie poster"/>
+    </a>
     <div class="movielist__card-info">
-    <i class="fa-solid fa-star fa-2xs"></i>
-    <span>9.1</span></div>`
+      <i class="fa-solid fa-star fa-2xs"></i>
+      <span>9.1</span>
+    </div>
+    `
+        movieList.appendChild(movielistCard);
+      });
 
-    movieList.appendChild(movielistCard);
-  });
+    }
 
-}
+    // Site color switch
 
-// Site color switch
+    function toggleColor() {
+      const html = document.documentElement;
+      if (html.classList.contains("lightmode")) {
+        html.classList.remove("lightmode");
+      } else {
+        html.classList.add("lightmode");
+      }
+    }
 
-function toggleColor() {
-  const html = document.documentElement;
-  if (html.classList.contains("lightmode")) {
-    html.classList.remove("lightmode");
-  } else {
-    html.classList.add("lightmode");
-  }
-}
+    // Mobile menu
 
-// Mobile menu
-
-function mobileMenu() {
-  let menu = document.getElementById("mobile__items");
-  if (menu.style.display === "none") {
-    menu.style.display = "block";
-  } else {
-    menu.style.display = "none";
-  }
-}
+    function mobileMenu() {
+      let menu = document.getElementById("mobile__items");
+      if (menu.style.display === "none") {
+        menu.style.display = "block";
+      } else {
+        menu.style.display = "none";
+      }
+    }
