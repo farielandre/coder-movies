@@ -284,7 +284,7 @@ h3 {
 
 .movielist__card-info {
   position: absolute;
-  bottom: 10px;
+  bottom: 1rem;
   background: var(--color-dark-blue);
   padding: 0.25rem 0.5rem;
   left: 10px;
@@ -299,7 +299,7 @@ h3 {
   font-size: var(--font-s-sm);
 }
 
-.movielist__card-info .fa-star {
+.movielist__card-info .fa-heart {
   color: var(--color-yellow);
 }
 
