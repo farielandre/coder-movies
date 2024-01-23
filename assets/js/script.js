@@ -42,7 +42,7 @@ searchForm.onsubmit = (e) => {
   const inputText = searchTitle.value;
 
   if (inputText == "") {
-    alert("Type the movie's name");
+    alert("Type the movie's name"); 
     return;
   }
 
