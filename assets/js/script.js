@@ -52,10 +52,14 @@ searchForm.onsubmit = (e) => {
       .then((data) => showMovies(data.results));
 
     function showMovies(data) {
-      // console.log(data);
+      const movieList = document.querySelector("div.movielist__container");
+      movieList.innerHTML = "";
+
+      const h3Title = document.querySelector("h3");
+      h3Title.innerText = `Your search result`;
+
       data.forEach(movie => {
         const { title, poster_path, vote_average } = movie;
-        const movieList = document.querySelector("div.movielist__container");
         let movielistCard = document.createElement("div");
         movielistCard.classList.add("movielist__card");
         movielistCard.innerHTML = `
