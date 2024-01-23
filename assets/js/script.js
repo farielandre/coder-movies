@@ -1,18 +1,16 @@
-// API TMDB - Lista de filmes na index.html
+// API TMDB - Referencia: https://developer.themoviedb.org/docs/
 
-const TMDBKey = 'api_key=0d56374213cbb8fee874d62f13209cc4';
+// API TMDB - Mostrar lista de filmes na index.html 
+
+const apiKEY = 'api_key=0d56374213cbb8fee874d62f13209cc4';
 const baseURL = 'https://api.themoviedb.org/3';
-const apiURL = baseURL + '/discover/movie?sort_by=popularity.desc&' + TMDBKey;
+const apiURL = baseURL + '/discover/movie?sort_by=popularity.desc&' + apiKEY;
 const imgURL = 'https://image.tmdb.org/t/p/w500';
-const searchURL = baseURL + '/search/movie?' + TMDBKey;
+const searchURL = baseURL + '/search/movie?' + apiKEY;
 
-getMovieData(apiURL);
-
-function getMovieData(url) {
-  fetch(url)
-    .then((response) => response.json())
-    .then((data) => showMovies(data.results));
-}
+fetch(apiURL)
+  .then((response) => response.json())
+  .then((data) => showMovies(data.results));
 
 function showMovies(data) {
   // console.log(data);
@@ -36,19 +34,42 @@ function showMovies(data) {
 
 // API TMDB - Busca de filmes
 
-const searchForm = document.getElementById("header__form");
+const searchForm = document.getElementById("form");
+const searchTitle = document.getElementById("form__input");
 
-searchForm.onsubmit = (ev) => {
-  ev.preventDefault();
-  const searchTitle = ev.target.searchTitle.value;
+searchForm.onsubmit = (e) => {
+  e.preventDefault();
+  const inputText = searchTitle.value;
 
-  if (searchTitle == "") {
+  if (inputText == "") {
     alert("Type the movie's name");
     return;
   }
 
   if (searchTitle) {
-    getMovieData(searchURL + "&query=" + searchTitle);
+    fetch(searchURL + "&query=" + inputText) // Referencia: https://developer.themoviedb.org/docs/search-and-query-for-details
+      .then((response) => response.json())
+      .then((data) => showMovies(data.results));
+
+    function showMovies(data) {
+      // console.log(data);
+      data.forEach(movie => {
+        const { title, poster_path, vote_average } = movie;
+        const movieList = document.querySelector("div.movielist__container");
+        let movielistCard = document.createElement("div");
+        movielistCard.classList.add("movielist__card");
+        movielistCard.innerHTML = `
+          <a href="details.html">
+            <img src="${imgURL + poster_path}" alt="${title} movie poster"/>
+          </a>
+          <div class="movielist__card-info">
+            <i class="fa-solid fa-heart fa-xs"></i>
+            <span>${vote_average}</span>
+          </div>
+          `
+        movieList.appendChild(movielistCard);
+      })
+    }
   }
 }
 
