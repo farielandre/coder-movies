@@ -276,7 +276,7 @@ h3 {
 
 .movielist__card img {
   border-radius: 0.75rem;
-  width: 220px;
+  width: auto;
   object-fit: cover;
   max-width: 100%;
   z-index: 999;
@@ -302,6 +302,7 @@ h3 {
 .movielist__card-info .fa-heart {
   color: var(--color-yellow);
 }
+
 
 /* Details Page */
 
@@ -602,12 +603,20 @@ h3 {
 
   #mobile__items a:hover {
     color: var(--color-yellow);
-    font-weight: var(--font-w-bold);
+  }
+
+  .header__darkmode-mobile {
+    color: var(--color-light-grey);
+    margin-top: 0.3rem;
+  }
+
+  .header__darkmode-mobile:hover {
+    color: var(--color-yellow);
   }
 
   #burger__icon {
     cursor: pointer;
-  }  
+  }
 
   #burger__icon:hover {
     color: var(--color-yellow);

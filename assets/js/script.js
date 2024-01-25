@@ -25,7 +25,7 @@ function showMovies(data) {
         </a>
         <div class="movielist__card-info">
           <i class="fa-solid fa-heart fa-xs"></i>
-          <span>${vote_average}</span>
+          <span>${parseFloat(vote_average.toFixed(1))}</span>
         </div>
         `
     movieList.appendChild(movielistCard);
@@ -68,7 +68,7 @@ searchForm.onsubmit = (e) => {
           </a>
           <div class="movielist__card-info">
             <i class="fa-solid fa-heart fa-xs"></i>
-            <span>${vote_average}</span>
+            <span>${parseFloat(vote_average.toFixed(1))}</span>
           </div>
           `
         movieList.appendChild(movielistCard);
@@ -92,9 +92,9 @@ function toggleColor() {
 
 function mobileMenu() {
   let menu = document.getElementById("mobile__items");
-  if (menu.style.display === "none") {
-    menu.style.display = "block";
-  } else {
+  if (menu.style.display === "block") {
     menu.style.display = "none";
+  } else {
+    menu.style.display = "block";
   }
 }
