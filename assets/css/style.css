@@ -44,10 +44,13 @@ button {
   /* font-color */
   --color-dark-blue: #030712;
   --color-mid-blue: #161a26;
+  --color-mid2-blue: #242938;
   --color-grey: #6b7280;
   --color-yellow: #fbbf24;
   --color-light-grey: #f9fafb;
   --color-black: #000000;
+  --color-scrollbar-track: #161a26;
+  --color-scrollbar-thumb: #242938;
 
   /* font-family */
   --font-family: "Roboto", sans-serif;
@@ -78,11 +81,14 @@ button {
   --color-yellow: #fbbf24;
   --color-light-grey: #030712;
   --color-black: #000000;
+  --color-scrollbar-track: #ccced6;
+  --color-scrollbar-thumb: #b0b3c2;
 }
 
 html {
   scroll-behavior: smooth;
 }
+
 
 .hide {
   display: none;
@@ -102,6 +108,27 @@ h3 {
   font-size: var(--font-s-xl);
   font-weight: var(--font-w-medium);
   margin: 2.5rem 0rem 2rem 0rem;
+}
+
+/* Custom scrollbar */
+
+::-webkit-scrollbar {
+  width: 11px
+}
+
+::-webkit-scrollbar-track {
+  /* box-shadow: inset 0 0 5px grey;  */
+  background: var(--color-scrollbar-track);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-scrollbar-thumb); 
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-yellow); 
 }
 
 /* Container */
