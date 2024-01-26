@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" id="lightmode">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8" />
@@ -64,11 +64,8 @@
           Watchlist
         </a>
       </button>
-      <button class="header__darkmode" id="btn__circle">
-        <i class="fa-solid fa-circle-half-stroke fa-lg" onclick="toggleColor()"></i>
-      </button>
-      <button class="hamburger hide">
-        <i class="fa-solid fa-bars fa-2xs"></i>
+      <button class="header__darkmode" id="btn__circle" onclick="toggleColor()">
+        <i class="fa-solid fa-circle-half-stroke fa-lg"></i>
       </button>
       <!-- Mobile menu -->
       <menu class="mobile__menu hide">
@@ -76,8 +73,8 @@
         <div id="mobile__items">
           <a href="index.html">Home</a>
           <a href="watchlist.html">Watchlist</a>
-          <button class="header__darkmode-mobile">
-            <i class="fa-solid fa-circle-half-stroke fa-sm" onclick="toggleColor()"></i>
+          <button class="header__darkmode-mobile" onclick="toggleColor()">
+            <i class="fa-solid fa-circle-half-stroke fa-xl"></i>
           </button>
         </div>
       </menu>

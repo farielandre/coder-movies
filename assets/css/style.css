@@ -89,7 +89,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
 .hide {
   display: none;
 }
@@ -604,13 +603,11 @@ h3 {
   .mobile__menu {
     position: relative;
     display: block;
-    font-size: 2rem;
   }
 
   #mobile__items {
     display: none;
     position: absolute;
-    padding: 1rem;
     right: 0;
     top: 3.3rem;
     text-align: right;
@@ -626,6 +623,8 @@ h3 {
     font-size: var(--font-s-2m);
     font-weight: var(--font-w-medium);
     line-height: calc(100% + 1rem);
+    padding: 0.3rem 1rem;
+    border-bottom: 1px solid var(--color-mid2-blue);
   }
 
   #mobile__items a:hover {
@@ -634,7 +633,7 @@ h3 {
 
   .header__darkmode-mobile {
     color: var(--color-light-grey);
-    margin-top: 0.3rem;
+    padding: 0.6rem 1rem;
   }
 
   .header__darkmode-mobile:hover {
@@ -643,6 +642,7 @@ h3 {
 
   #burger__icon {
     cursor: pointer;
+    font-size: 2rem;
   }
 
   #burger__icon:hover {

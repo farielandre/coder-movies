@@ -80,12 +80,21 @@ searchForm.onsubmit = (e) => {
 // Mudança de cor do site
 
 function toggleColor() {
-  const html = document.documentElement;
-  if (html.classList.contains("lightmode")) {
-    html.classList.remove("lightmode");
+  let theme = "";
+  if (document.documentElement.classList.contains("lightmode")) {
+    document.documentElement.classList.remove("lightmode");
+    theme = "dark";
   } else {
-    html.classList.add("lightmode");
+    document.documentElement.classList.add("lightmode");
+    theme = "light";
   }
+  sessionStorage.setItem("colorTheme", theme);
+}
+
+let getTheme = sessionStorage.getItem("colorTheme");
+
+if (getTheme === "light") {
+  document.documentElement.classList = "lightmode";
 }
 
 // Menu mobile
