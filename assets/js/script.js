@@ -102,7 +102,6 @@ if (getThemeDesktop === "light") {
   document.documentElement.classList = "lightmode";
 }
 
-
 // Mudança de cor do site mobile
 
 function toggleColorMobile() {
