@@ -181,20 +181,6 @@ h3 {
   color: var(--color-dark-blue);
 }
 
-#btn__circle {
-  border-radius: 100%;
-  color: var(--color-light-grey);
-  padding: 0.5rem;
-  border: 1px solid var(--color-yellow);
-  font-size: var(--font-s-2m);
-}
-
-#btn__circle:hover {
-  background: var(--color-yellow);
-  transition: all 0.3s;
-  color: var(--color-dark-blue);
-}
-
 /* Header Genres*/
 
 .header__genres {
@@ -271,10 +257,21 @@ h3 {
   max-width: 11rem;
 }
 
-/* Header Darkmode Button*/
+/* Header Lightmode Button*/
 
-.header__darkmode {
+.header__lightmode {
   margin-left: auto;
+  border-radius: 100%;
+  color: var(--color-light-grey);
+  border: 1px solid var(--color-yellow);
+  width: 3rem;
+  height: 3rem;
+}
+
+.header__lightmode:hover {
+  background: var(--color-yellow);
+  transition: all 0.3s;
+  color: var(--color-dark-blue);
 }
 
 /* Movie List */
@@ -584,7 +581,7 @@ h3 {
     max-width: 100%;
   }
 
-  .header__darkmode,
+  .header__lightmode,
   .header__watchlist {
     display: none;
   }
@@ -631,18 +628,17 @@ h3 {
     color: var(--color-yellow);
   }
 
-  .header__darkmode-mobile {
+  .header__lightmode-mobile {
     color: var(--color-light-grey);
     padding: 0.6rem 1rem;
   }
 
-  .header__darkmode-mobile:hover {
+  .header__lightmode-mobile:hover {
     color: var(--color-yellow);
   }
 
   #burger__icon {
     cursor: pointer;
-    font-size: 2rem;
   }
 
   #burger__icon:hover {

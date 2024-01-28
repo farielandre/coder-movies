@@ -77,9 +77,15 @@ searchForm.onsubmit = (e) => {
   }
 }
 
-// Mudança de cor do site
+// Mudança de cor do site desktop
 
-function toggleColor() {
+function toggleColorDesktop() {
+  const icon = document.getElementById("lightmode__icon");
+  if (icon.classList.contains("fa-moon")) {
+    icon.classList.replace("fa-moon", "fa-sun");
+  } else {
+    icon.classList.replace("fa-sun", "fa-moon");
+  }
   let theme = "";
   if (document.documentElement.classList.contains("lightmode")) {
     document.documentElement.classList.remove("lightmode");
@@ -91,15 +97,42 @@ function toggleColor() {
   sessionStorage.setItem("colorTheme", theme);
 }
 
-let getTheme = sessionStorage.getItem("colorTheme");
+let getThemeDesktop = sessionStorage.getItem("colorTheme");
+if (getThemeDesktop === "light") {
+  document.documentElement.classList = "lightmode";
+}
 
-if (getTheme === "light") {
+
+// Mudança de cor do site mobile
+
+function toggleColorMobile() {
+  const icon = document.getElementById("lightmode__icon-mobile");
+  if (icon.classList.contains("fa-moon")) {
+    icon.classList.replace("fa-moon", "fa-sun");
+  } else {
+    icon.classList.replace("fa-sun", "fa-moon");
+  }
+  let theme = "";
+  if (document.documentElement.classList.contains("lightmode")) {
+    document.documentElement.classList.remove("lightmode");
+    theme = "dark";
+  } else {
+    document.documentElement.classList.add("lightmode");
+    theme = "light";
+  }
+  sessionStorage.setItem("colorTheme", theme);
+}
+
+let getThemeMobile = sessionStorage.getItem("colorTheme");
+if (getThemeMobile === "light") {
   document.documentElement.classList = "lightmode";
 }
 
 // Menu mobile
 
 function mobileMenu() {
+  const icon = document.getElementById("burger__icon");
+  icon.classList.toggle("fa-times");
   let menu = document.getElementById("mobile__items");
   if (menu.style.display === "block") {
     menu.style.display = "none";

@@ -59,22 +59,19 @@
         </div>
       </form>
       <button class="header__watchlist btn">
-        <a href="watchlist.html">
-          <i class="fa-solid fa-bookmark fa-sm"></i>
-          Watchlist
-        </a>
+        <a href="watchlist.html"><i class="fa-solid fa-bookmark fa-sm"></i> Watchlist</a>
       </button>
-      <button class="header__darkmode" id="btn__circle" onclick="toggleColor()">
-        <i class="fa-solid fa-circle-half-stroke fa-lg"></i>
+      <button class="header__lightmode">
+        <i id="lightmode__icon" class="fa-solid fa-moon fa-xl" onclick="toggleColorDesktop()"></i>
       </button>
       <!-- Mobile menu -->
       <menu class="mobile__menu hide">
-        <i id="burger__icon" class="fa fa-bars" onclick="mobileMenu()"></i>
+        <i id="burger__icon" class="fa-solid fa-bars fa-2xl" onclick="mobileMenu()"></i>
         <div id="mobile__items">
           <a href="index.html">Home</a>
           <a href="watchlist.html">Watchlist</a>
-          <button class="header__darkmode-mobile" onclick="toggleColor()">
-            <i class="fa-solid fa-circle-half-stroke fa-xl"></i>
+          <button class="header__lightmode-mobile">
+            <i id="lightmode__icon-mobile" class="fa-solid fa-moon fa-xl" onclick="toggleColorMobile()"></i>
           </button>
         </div>
       </menu>
