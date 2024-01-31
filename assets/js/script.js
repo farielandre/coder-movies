@@ -77,6 +77,30 @@ searchForm.onsubmit = (e) => {
   }
 }
 
+// API TMDB - details.html
+
+// function detailsMovies() {
+//   fetch(apiURL)
+//     .then(response => response.json())
+//     .then(data => {
+//       if (data.results) {
+//         const idsDosFilmes = data.results.map(movie => movie.id);
+//         // console.log(idsDosFilmes);
+//         const ID1 = idsDosFilmes[0];
+//         const convertURL = `https://api.themoviedb.org/3/movie/${ID1}?` + apiKEY;
+//         fetch(`${convertURL}`)
+//           .then(response => response.json())
+//           .then(data => console.log(data));
+//         const getDetails = document.querySelector(".details__container");
+//         getDetails.innerHTML =
+//           `<section class="details__column-left">
+//              <img class="movie__cover" src=${backdrop_path} alt="movie cover" />
+//             </section>`
+//       }
+//     })
+
+// }
+
 // Mudança de cor do site desktop
 
 function toggleColorDesktop() {
