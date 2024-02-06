@@ -77,7 +77,7 @@ searchForm.onsubmit = (e) => {
   }
 }
 
-// API TMDB - details.html
+// API TMDB - details.html - Não conseguimos fazer funcionar
 
 // function detailsMovies() {
 //   fetch(apiURL)
@@ -98,7 +98,6 @@ searchForm.onsubmit = (e) => {
 //             </section>`
 //       }
 //     })
-
 // }
 
 // Mudança de cor do site desktop
